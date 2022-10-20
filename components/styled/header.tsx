@@ -15,7 +15,7 @@ const DivHeader = styled.div`
   position: relative;
 
   @media (min-width: 64rem) {
-    padding: 1rem 15%;
+    padding: 1rem 20%;
   }
 `
 const DivLogo = styled.div`
@@ -68,32 +68,70 @@ const MobileButton = styled.span`
 const DivMenu = styled.nav`
 background-color:  ${({theme}) => theme.colors[800]};
 width: 100%;
-padding: 0;
+padding: 0 5%;
 height: 0;
 visibility: hidden;
 overflow: hidden;
-text-align: center;
-${(props: Props)  => {
-  if(props.mobileActive == true) {
-    return`
-      height: 100%;
-      visibility: visible;
-      overflow: auto;
-      padding: 1rem 5%;
-    `
+transition: .3s;
+@media (min-width: 64rem) {
+display: none;
+}
+  ${(props: Props)  => {
+    if(props.mobileActive) {
+      return`
+        height: 13.9375rem;
+        visibility: visible;
+        overflow: auto;
+        padding: 1rem 5%;
+      `
+    }
   }
-}}
+ 
+}
+`
+const DivDesktopMenu = styled.nav`
+display: none;
+
+@media (min-width: 64rem) {
+width: 100%;
+margin: auto;
+display: block;
+text-align: center;
+}
+`
+const Anchors = styled.li`
+margin: 2rem 0;
+font-size: 1.125rem;
+&:hover {
+  color: ${({theme}) => theme.colors[200]};
+}
+@media (min-width: 64rem) {
+  display: inline;
+  margin: 0 1rem;
+  font-size: 1rem;
+}
 `
 
 const Menu = ({mobileActive: Props}) => {
   return (
     <DivMenu mobileActive={Props}>
       <ul>
-        <li><Link href="#">Strategies</Link></li>
-        <li><Link href="#">Potatos</Link></li>
-        <li><Link href="#">Enemies</Link></li>
+        <Anchors><Link href="#">Strategies</Link></Anchors>
+        <Anchors><Link href="#">Potatos</Link></Anchors>
+        <Anchors><Link href="#">Enemies</Link></Anchors>
       </ul>
     </DivMenu>
+  )
+}
+const DesktopMenu = () => {
+  return (
+    <DivDesktopMenu>
+      <ul>
+        <Anchors><Link href="#">Strategies</Link></Anchors>
+        <Anchors><Link href="#">Potatos</Link></Anchors>
+        <Anchors><Link href="#">Enemies</Link></Anchors>
+      </ul>
+    </DivDesktopMenu>
   )
 }
 
@@ -107,6 +145,7 @@ const Header = () => {
    <header>
     <DivHeader>
         <Logo url='https://via.placeholder.com/125x125' text='MetaBrotato'/>
+        <DesktopMenu />
         <MobileButton onClick={() => setMobileActive(!mobileActive)}/>
     </DivHeader>
 
