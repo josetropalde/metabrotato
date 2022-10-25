@@ -1,14 +1,17 @@
 import styled from 'styled-components'
 
 const DivCharacter = styled.div`
-margin: 0 3rem;
-order: 2;
+  margin-left: 2rem;
+  order: 2;
+  @media (min-width: 64rem) {
+    margin: 0 3rem;
+  }
 `
 
 const CharacterImage =  styled.img`
-max-width: 2.5rem;
-@media (min-width: 64rem) {
-  max-width: 3.125rem;
+max-width: 50px;
+@media (min-width: 80rem) {
+  max-width: 70px;
 }
 `
 const SecondaryTitle =  styled.h2`

@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import styled from 'styled-components'
-import { DivEarlyLate, Item } from './sharedstyles'
+import { DivBgImages, DivEarlyLate, Item } from './sharedstyles'
 
 const ItensLate = ({itemsLate}) => {
   return (
   <>
     <DivEarlyLate>
-      {itemsLate.map((item, index) => <Item src={item.url} key={index}/>)}
+      {itemsLate.map((item, index) => <DivBgImages><Item src={item.url} key={index}/></DivBgImages>)}
     </DivEarlyLate>
   </>
   )

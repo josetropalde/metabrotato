@@ -10,22 +10,23 @@ const Container = styled.div`
 margin-top: 2rem;
 
 `
-
 const Item = styled.img`
-&::after {
-    content: '>';
-}
   max-width: 40px;
-margin: .0625rem .25rem;
-@media(min-width: 64rem) {
-  max-width: 50px;
-margin: .0625rem .25rem;
-}
+  margin: .0625rem .25rem;
+  @media(min-width: 80rem) {
+    max-width: 50px;
+    margin: .0625rem .25rem;
+  }
 `
-
 const DivEarlyLate = styled.div`
 display: block;
 margin: 1rem 0;
 `
-
-export {Main, Container, Item, DivEarlyLate }
+const DivBgImages = styled.div`
+display: inline-block;
+background-color: ${({theme}) => theme.colors[700]};
+border-radius: 0.25rem;
+box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+margin: .5rem;
+`
+export {Main, Container, Item, DivEarlyLate,DivBgImages }

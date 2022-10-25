@@ -4,9 +4,9 @@ import styled from 'styled-components'
 
 const StyledTier =  styled.div<{tierColor?: string}>`
   font-weight: bold;
-  font-size: 1.125rem;
-  width: 30px;
-  height: 30px;
+  font-size: 1.5rem;
+  width: 35px;
+  height: 35px;
   text-align: center;
   border-radius: .25rem;
   order: 1;

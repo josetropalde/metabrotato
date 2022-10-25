@@ -1,17 +1,20 @@
 import styled from 'styled-components'
 
 const DivItens = styled.div`
+margin: auto;
 margin-top: 1rem;
-margin-left: 2rem;
 order: 4;
+
 @media (min-width: 64rem) {
 margin: auto;
-order: 3;
 }
 `
 const Item = styled.img`
-max-width: 80px;
+max-width: 50px;
 margin: .0625rem .25rem;
+@media (min-width: 80rem) {
+  max-width: 70px;
+}
 `
 
 const Items = ({items}) => {
