@@ -17,6 +17,7 @@ max-width: 50px;
 const SecondaryTitle =  styled.h2`
 font-size: .875rem;
 font-weight: normal;
+text-align: center;
 `
 
 

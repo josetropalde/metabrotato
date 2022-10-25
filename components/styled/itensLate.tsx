@@ -6,7 +6,7 @@ const ItensLate = ({itemsLate}) => {
   return (
   <>
     <DivEarlyLate>
-      {itemsLate.map((item, index) => <DivBgImages><Item src={item.url} key={index}/></DivBgImages>)}
+      {itemsLate.map((item, index) => <DivBgImages key={index}><Item src={item.url} key={index}/></DivBgImages>)}
     </DivEarlyLate>
   </>
   )

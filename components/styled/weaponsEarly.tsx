@@ -11,7 +11,7 @@ const WeaponsEarly = ({weaponsEarly}) => {
   return (
   <>
   <DivEarlyLate>
-    {weaponsEarly.map((item, index) => <DivBgImages><Item src={item.url} key={index}/></DivBgImages>)}
+    {weaponsEarly.map((item, index) => <DivBgImages key={index}><Item src={item.url} key={index}/></DivBgImages>)}
   </DivEarlyLate>
   </>
   )

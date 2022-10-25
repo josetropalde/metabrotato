@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Cards from '../components/styled/cards'
 import Header from '../components/styled/header'
 import { Container, Main } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
@@ -9,33 +8,11 @@ import { request } from "../lib/datocms";
 
 const PROJECTS_QUERY = `
 query MyQuery {
-  allCards(orderBy: _createdAt_ASC) {
-    tier
-    name
-    character {
+  allCharacters {
+    characterImage {
       url
     }
-    items {
-      url
-    }
-    itemsearly {
-      url
-    }
-    itemslate {
-      url
-    }
-    weaponsearly {
-      url
-    }
-    weaponslate {
-      url
-    }
-    statsearly {
-      url
-    }
-    statslate {
-      url
-    }
+    characterName
   }
 }
 `;
@@ -67,7 +44,7 @@ const Home = ({subscription}) => {
   return (  
   <>
       <Head>
-      <title>Brotato Meta Best Strategies and Builds - MetaBrotato</title>
+      <title>All Characters - MetaBrotato</title>
       <meta
         name="description"
         content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."
@@ -78,24 +55,14 @@ const Home = ({subscription}) => {
     <Header />
 
     <Main>
-      <Title text="Best Strategys" />
+      <Title title="All Characters"/>
       <Container>
-        {data.allCards.map((card, index) => {
+        {data.allCharacters.map((item, index) => {
           return (
-            <Cards 
-            tier={card.tier} 
-            name={card.name} 
-            character={card.character} 
-            items={card.items} 
-
-            itemsEarly={card.itemsearly}
-            weaponsEarly={card.weaponsearly}
-            statsEarly={card.statsearly}
-
-            itemsLate={card.itemslate}
-            weaponsLate={card.weaponslate}
-            statsLate={card.statslate}
-            key={index}/>
+            <div key={index}>
+              <img src={item.characterImage[0].url} alt="" />
+              <h2>{item.characterName}</h2>
+            </div>
           )
         })}
       </Container>

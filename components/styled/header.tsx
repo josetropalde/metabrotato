@@ -93,8 +93,7 @@ const DivDesktopMenu = styled.nav`
 display: none;
 
 @media (min-width: 64rem) {
-width: 100%;
-margin: auto;
+margin-left: auto;
 display: block;
 text-align: center;
 }
@@ -127,9 +126,9 @@ const DesktopMenu = () => {
   return (
     <DivDesktopMenu>
       <ul>
-        <Anchors><Link href="#">Strategies</Link></Anchors>
-        <Anchors><Link href="#">Potatos</Link></Anchors>
-        <Anchors><Link href="#">Enemies</Link></Anchors>
+        <Anchors><Link href="/">Strategies</Link></Anchors>
+        <Anchors><Link href="/characters">Characters</Link></Anchors>
+        <Anchors><Link href="/items">Items</Link></Anchors>
       </ul>
     </DivDesktopMenu>
   )

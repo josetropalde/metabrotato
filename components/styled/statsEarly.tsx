@@ -8,7 +8,7 @@ const StatsEarly = ({statsEarly}) => {
   return (
   <>
   <DivEarlyLate>
-    {statsEarly.map((item, index) => <DivBgImages><Item src={item.url} key={index}/></DivBgImages>)}
+    {statsEarly.map((item, index) => <DivBgImages key={index}><Item src={item.url} key={index}/></DivBgImages>)}
   </DivEarlyLate>
   </>
   )

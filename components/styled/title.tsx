@@ -16,10 +16,10 @@ const StyledTitle = styled.h2`
 
 
 
-const Title = () => {
+const Title = ({text}: any) => {
   return (
   <>
-    <StyledTitle>Best Strategys</StyledTitle>
+    <StyledTitle>{text}</StyledTitle>
   </>
   )
 }
