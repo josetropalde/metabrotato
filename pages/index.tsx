@@ -10,11 +10,14 @@ const Home = () => {
     {tier: 'S',
      name: 'Healer', 
      character:'https://via.placeholder.com/150x150', 
-     itens: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150'] },
-    {tier: 'A',
-     name: 'Chunky', 
-     character:'https://via.placeholder.com/150x150', 
-     itens: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150'] },
+     itens: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150'],
+     itemsEarly: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
+     weaponsEarly: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
+     statsEarly: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
+     itemsLate: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
+     weaponsLate: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
+     statsLate: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
+    },
 
   ]
   return (
@@ -35,7 +38,20 @@ const Home = () => {
       <Container>
         {cardsData.map((card, index) => {
           return (
-            <Cards tier={card.tier} name={card.name} character={card.character} itens={card.itens} key={index}/>
+            <Cards 
+            tier={card.tier} 
+            name={card.name} 
+            character={card.character} 
+            itens={card.itens} 
+
+            itemsEarly={card.itemsEarly}
+            weaponsEarly={card.weaponsEarly}
+            statsEarly={card.statsEarly}
+
+            itemsLate={card.itemsLate}
+            weaponsLate={card.weaponsLate}
+            statsLate={card.statsLate}
+            key={index}/>
           )
         })}
       </Container>
