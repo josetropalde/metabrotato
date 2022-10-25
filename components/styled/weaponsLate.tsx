@@ -6,7 +6,7 @@ const WeaponsLate = ({weaponsLate}) => {
   return (
   <>
     <DivEarlyLate>
-      {weaponsLate.map((item, index) => <Item src={item} key={index}/>)}
+      {weaponsLate.map((item, index) => <Item src={item.url} key={index}/>)}
     </DivEarlyLate>
   </>
   )

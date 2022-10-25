@@ -4,23 +4,68 @@ import Header from '../components/styled/header'
 import { Container, Main } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
 
+import { useQuerySubscription } from "react-datocms";
+import { request } from "../lib/datocms";
 
-const Home = () => {
-  const cardsData = [
-    {tier: 'S',
-     name: 'Healer', 
-     character:'https://via.placeholder.com/150x150', 
-     itens: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150'],
-     itemsEarly: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
-     weaponsEarly: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
-     statsEarly: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
-     itemsLate: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
-     weaponsLate: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
-     statsLate: ['https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150', 'https://via.placeholder.com/150x150',],
+const PROJECTS_QUERY = `
+query MyQuery {
+  allCards(orderBy: _createdAt_ASC) {
+    tier
+    name
+    character {
+      url
+    }
+    items {
+      url
+    }
+    itemsearly {
+      url
+    }
+    itemslate {
+      url
+    }
+    weaponsearly {
+      url
+    }
+    weaponslate {
+      url
+    }
+    statsearly {
+      url
+    }
+    statslate {
+      url
+    }
+  }
+}
+`;
+
+export async function getStaticProps(context) {
+  const graphqlRequest: any = {
+    query: PROJECTS_QUERY,
+    includeDrafts: context.preview,
+  };
+  return {
+    props: {
+      subscription: context.preview
+        ? {
+            ...graphqlRequest,
+            initialData: await request(graphqlRequest),
+            token: process.env.NEXT_DATOCMS_API_TOKEN,
+          }
+        : {
+            enabled: false,
+            initialData: await request(graphqlRequest),
+          },
     },
+  };
+}
 
-  ]
-  return (
+const Home = ({subscription}) => {
+
+  const { data, error, status } = useQuerySubscription(subscription);
+  console.log(data)
+  return (  
   <>
       <Head>
       <title>Brotato Meta Best Strategies and Builds - MetaBrotato</title>
@@ -36,21 +81,21 @@ const Home = () => {
     <Main>
       <Title />
       <Container>
-        {cardsData.map((card, index) => {
+        {data.allCards.map((card, index) => {
           return (
             <Cards 
             tier={card.tier} 
             name={card.name} 
             character={card.character} 
-            itens={card.itens} 
+            items={card.items} 
 
-            itemsEarly={card.itemsEarly}
-            weaponsEarly={card.weaponsEarly}
-            statsEarly={card.statsEarly}
+            itemsEarly={card.itemsearly}
+            weaponsEarly={card.weaponsearly}
+            statsEarly={card.statsearly}
 
-            itemsLate={card.itemsLate}
-            weaponsLate={card.weaponsLate}
-            statsLate={card.statsLate}
+            itemsLate={card.itemslate}
+            weaponsLate={card.weaponslate}
+            statsLate={card.statslate}
             key={index}/>
           )
         })}

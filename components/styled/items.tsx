@@ -14,13 +14,13 @@ max-width: 80px;
 margin: .0625rem .25rem;
 `
 
-const Itens = ({itens}) => {
+const Items = ({items}) => {
   return (
   <>
     <DivItens>
-      {itens.map((item, index) => {
+      {items.map((item, index) => {
         return (
-          <Item src={item} key={index}/>
+          <Item src={item.url} key={index}/>
         )
       })}
     </DivItens>
@@ -28,4 +28,4 @@ const Itens = ({itens}) => {
   )
 }
 
-export default Itens;
+export default Items;

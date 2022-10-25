@@ -8,7 +8,7 @@ const ItensEarly = ({itemsEarly}) => {
   return (
   <>
     <DivEarlyLate>
-      {itemsEarly.map((item: string, index: string) => <Item src={item} key={index}/>)} 
+      {itemsEarly.map((item, index) => <Item src={item.url} key={index}/>)} 
     </DivEarlyLate>
   </>
   )

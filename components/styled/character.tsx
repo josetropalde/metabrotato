@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 const DivCharacter = styled.div`
-margin: 0 1.5rem;
+margin: 0 3rem;
 order: 2;
 `
 
@@ -17,11 +17,11 @@ font-weight: normal;
 `
 
 
-const Character = ({image, name}) => {
+const Character = ({character, name}) => {
   return (
   <>
     <DivCharacter>
-      <CharacterImage src={image} />
+      <CharacterImage src={character.url} />
       <SecondaryTitle>{name}</SecondaryTitle>
     </DivCharacter>
   </>

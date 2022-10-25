@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 import Tier from './tier'
 import Character from './character'
-import Itens from './itens'
 import { useState } from 'react'
 import ItensEarly from './itensEarly'
 import WeaponsEarly from './weaponsEarly'
@@ -9,6 +8,7 @@ import StatsEarly from './statsEarly'
 import ItensLate from './itensLate'
 import WeaponsLate from './weaponsLate'
 import StatsLate from './statsLate'
+import Items from './items'
 
 const Card = styled.div`
   background-color: #57534E;
@@ -60,14 +60,15 @@ width: 50%;
 }
 `
 
-const Cards = ({tier, name, character, itens, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
+const Cards = ({tier, name, character, items, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
   const [infoActive, setInfoActive] = useState(false);
+  console.log(items)
   return (
     <>
       <Card onClick={()=> setInfoActive(!infoActive)}>
         <Tier tier={tier}/>
-        <Character name={name} image={character}/>
-        <Itens itens={itens}/>
+        <Character name={name} character={character}/>
+        <Items items={items}/>
         <Arrow src="/angle-down-solid 1.png" alt="" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
       </Card>
 

@@ -7,7 +7,7 @@ const StatsLate = ({statsLate}) => {
   return (
   <>
     <DivEarlyLate>
-      {statsLate.map((item, index) => <Item src={item} key={index}/>)}
+      {statsLate.map((item, index) => <Item src={item.url} key={index}/>)}
     </DivEarlyLate>
   </>
   )

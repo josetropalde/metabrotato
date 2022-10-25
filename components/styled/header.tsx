@@ -139,7 +139,6 @@ const DesktopMenu = () => {
 
 const Header = () => {
   const [mobileActive, setMobileActive]= useState(false)
-  console.log(mobileActive)
   return (
   <>
    <header>

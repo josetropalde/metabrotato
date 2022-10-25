@@ -6,7 +6,7 @@ const ItensLate = ({itemsLate}) => {
   return (
   <>
     <DivEarlyLate>
-      {itemsLate.map((item, index) => <Item src={item} key={index}/>)}
+      {itemsLate.map((item, index) => <Item src={item.url} key={index}/>)}
     </DivEarlyLate>
   </>
   )
