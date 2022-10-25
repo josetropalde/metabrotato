@@ -12,7 +12,7 @@
     "module": "esnext",
     "resolveJsonModule": true,
     "moduleResolution": "node",
-    "isolatedModules": true,
+    "isolatedModules": false,
     "jsx": "preserve"
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/index.tsx"],

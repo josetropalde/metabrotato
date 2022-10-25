@@ -1,13 +1,13 @@
 import styled from 'styled-components'
 
-const Title = styled.h1`
-  margin: 0;
-  line-height: 1.15;
-  font-size: 3rem;
-  text-decoration: none;
-  @media (max-width: 1024px) {
-    font-size: 4rem;
+const Main = styled.main`
+padding: 0 5%;
+  @media (min-width: 64rem) {
+    padding: 0 20%;
   }
 `
+const Container = styled.div`
+margin-top: 2rem;
 
-export {Title }
+`
+export {Main, Container }

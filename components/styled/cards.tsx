@@ -1,49 +1,70 @@
 import styled from 'styled-components'
-import Link from 'next/link'
-
-const FlexContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-`
+import Tier from './tier'
+import Character from './character'
+import Itens from './itens'
+import { useState } from 'react'
 
 const Card = styled.div`
+  background-color: #57534E;
   padding: 1.5rem;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid black;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-  width: 100%;
-
-  &:hover,
-  :focus,
-  :active {
-    color: #0070f3;
-    border-color: #0070f3;
+  border-radius: .25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  cursor: pointer;
+  margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+`
+const Arrow = styled.img`
+max-width: 20px;
+order: 3;
+@media (min-width: 64rem) {
+float: none;
+order: 4;
+}
+`
+const CardInfo = styled.div`
+  background-color: #57534E;
+  padding: 1.5rem;
+  border-radius: .25rem;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  cursor: pointer;
+  @media (min-width: 64rem) {
+    display: flex;
+    justify-content: space-between;
   }
 `
-
-const StyledA = styled.a`
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
+const EarlyGame = styled.div`
+width: 50%;
+`
+const LateGame = styled.div`
+width: 50%;
 `
 
-const StyledLink = ({ href, name }) => (
-  <Link href={href} passHref>
-    <StyledA>{name}</StyledA>
-  </Link>
-)
-
-export default function Cards() {
+const Cards = ({tier, name, character, itens}) => {
+  const [infoActive, setInfoActive] = useState(false);
   return (
-    <FlexContainer>
-      <Card>
-        <StyledLink href="/about" name="About Page &rarr;" />
+    <>
+      <Card onClick={()=> setInfoActive(!infoActive)}>
+        <Tier tier={tier}/>
+        <Character name={name} image={character}/>
+        <Itens itens={itens}/>
+        <Arrow src="/angle-down-solid 1.png" alt="" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
       </Card>
-    </FlexContainer>
+
+      <CardInfo style={{display: infoActive ? 'flex': 'none'}}>
+        <EarlyGame>
+          <h2>Early Game</h2>
+
+        </EarlyGame>
+        <LateGame>
+          <h2>Late Game</h2>
+        </LateGame>
+      </CardInfo>
+    </>
   )
 }
+export default Cards;
