@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import styled from 'styled-components'
 
 interface Props {
@@ -115,9 +115,9 @@ const Menu = ({mobileActive: Props}) => {
   return (
     <DivMenu mobileActive={Props}>
       <ul>
-        <Anchors><Link href="#">Strategies</Link></Anchors>
-        <Anchors><Link href="#">Potatos</Link></Anchors>
-        <Anchors><Link href="#">Enemies</Link></Anchors>
+      <Anchors><Link href="/">Strategies</Link></Anchors>
+        <Anchors><Link href="/characters">Characters</Link></Anchors>
+        <Anchors><Link href="/items">Items</Link></Anchors>
       </ul>
     </DivMenu>
   )
@@ -138,11 +138,32 @@ const DesktopMenu = () => {
 
 const Header = () => {
   const [mobileActive, setMobileActive]= useState(false)
+  const [logoImage, setLogoImage]= useState(0)
+
+  const imagesLogo = [
+    '/characters/brawlericonpng.png',
+    '/characters/chunkyiconpng.png',
+    '/characters/crazyiconpng.png',
+    '/characters/explorericonpng.png',
+    '/characters/luckyiconpng.png',
+  ]
+
+  useEffect(() => {
+    let imagesIndex = 0
+    setInterval(() => {
+      imagesIndex++
+      if(imagesIndex > (imagesLogo.length - 1) )  {
+        imagesIndex = 0;
+      }
+      setLogoImage(imagesIndex)
+    }, 1500)
+  }, [])
+ 
   return (
   <>
    <header>
     <DivHeader>
-        <Logo url='https://via.placeholder.com/125x125' text='MetaBrotato'/>
+        <Logo url={imagesLogo[logoImage]} text='MetaBrotato'/>
         <DesktopMenu />
         <MobileButton onClick={() => setMobileActive(!mobileActive)}/>
     </DivHeader>
