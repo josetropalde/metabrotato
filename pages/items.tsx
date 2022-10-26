@@ -60,7 +60,7 @@ const Characters = ({subscription}) => {
     <Header />
 
     <Main>
-      <Title title="All Items"/>
+      <Title text="All Items"/>
       <Container>
         {data.allItems.map((item, index) => {
           return (

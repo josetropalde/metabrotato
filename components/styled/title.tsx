@@ -16,7 +16,7 @@ const StyledTitle = styled.h2`
 
 
 
-const Title = ({text}: any) => {
+const Title = ({text} : any) => {
   return (
   <>
     <StyledTitle>{text}</StyledTitle>

@@ -1,7 +1,8 @@
 import styled from 'styled-components'
 
 const Main = styled.main`
-padding: 0 5%;
+  padding: 0 5%;
+  height: 100vh;
   @media (min-width: 64rem) {
     padding: 0 20%;
   }
@@ -21,6 +22,7 @@ const Item = styled.img`
 const DivEarlyLate = styled.div`
 display: block;
 margin: 1rem 0;
+
 `
 const DivBgImages = styled.div`
 display: inline-block;
@@ -28,6 +30,14 @@ background-color: ${({theme}) => theme.colors[700]};
 border-radius: 0.25rem;
 box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 margin: .5rem;
+position: relative;
+/* &::after {
+  content: '>';
+  position: absolute;
+  margin-left: .25rem;
+  top: 50%;
+  transform: translateY(-50%);
+} */
 `
 
 const StyledCard = styled.div`
@@ -66,5 +76,8 @@ const StyledCard = styled.div`
     }
   }
 `
-
-export {Main, Container, Item, DivEarlyLate, DivBgImages, StyledCard }
+const StatsImage = styled.img`
+max-width: 11.25rem;
+padding: .5rem .5rem .0 .5rem;
+`
+export {Main, Container, Item, DivEarlyLate, DivBgImages, StyledCard, StatsImage }

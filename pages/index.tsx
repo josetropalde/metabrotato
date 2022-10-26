@@ -6,6 +6,7 @@ import Title from '../components/styled/title'
 
 import { useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
+import Footer from '../components/styled/footer'
 
 const PROJECTS_QUERY = `
 query MyQuery {
@@ -72,7 +73,7 @@ const Home = ({subscription}) => {
         name="description"
         content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."
       />
-      <link rel="icon" href="/favicon.ico" />
+      <link rel="icon" href="/favicon.png" />
     </Head>
 
     <Header />
@@ -101,6 +102,7 @@ const Home = ({subscription}) => {
       </Container>
     </Main>
 
+        <Footer />
   </>
   )
 }
