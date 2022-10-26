@@ -9,7 +9,7 @@ order: 4;
 margin: auto;
 }
 `
-const Item = styled.img`
+const ItemImage = styled.img`
 max-width: 50px;
 margin: .0625rem .25rem;
 @media (min-width: 80rem) {
@@ -17,13 +17,13 @@ margin: .0625rem .25rem;
 }
 `
 
-const Items = ({items}) => {
+const Item = ({items}) => {
   return (
   <>
     <DivItens>
       {items.map((item, index) => {
         return (
-          <Item src={item.url} key={index}/>
+          <ItemImage src={item.url} key={index}/>
         )
       })}
     </DivItens>
@@ -31,4 +31,4 @@ const Items = ({items}) => {
   )
 }
 
-export default Items;
+export default Item;

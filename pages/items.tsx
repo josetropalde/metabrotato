@@ -8,12 +8,12 @@ import { request } from "../lib/datocms";
 
 const PROJECTS_QUERY = `
 query MyQuery {
-  allCharacters(first: 30) {
-    characterImage {
+  allItems(first: 100) {
+    itemName
+    itemImage {
       url
     }
-    characterName
-    characterDescription {
+    itemDescription {
       value
     }
   }
@@ -44,10 +44,12 @@ export async function getStaticProps(context) {
 const Characters = ({subscription}) => {
 
   const { data, error, status } = useQuerySubscription(subscription);
+  console.log(data)
+
   return (  
   <>
       <Head>
-      <title>All Characters - MetaBrotato</title>
+      <title>All Items - MetaBrotato</title>
       <meta
         name="description"
         content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."
@@ -60,14 +62,14 @@ const Characters = ({subscription}) => {
     <Main>
       <Title title="All Characters"/>
       <Container>
-        {data.allCharacters.map((item, index) => {
+        {data.allItems.map((item, index) => {
           return (
             <StyledCard key={index}>
               <div>
-                <img src={item.characterImage[0].url} alt="" />
-                <h2>{item.characterName}</h2>
+                <img src={item.itemImage[0].url} alt="" />
+                <h2>{item.itemName}</h2>
               </div>
-              <StructuredText data={item.characterDescription}/>
+              <StructuredText data={item.itemDescription}/>
             </StyledCard>
           )
         })}

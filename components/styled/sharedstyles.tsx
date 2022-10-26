@@ -29,4 +29,42 @@ border-radius: 0.25rem;
 box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 margin: .5rem;
 `
-export {Main, Container, Item, DivEarlyLate,DivBgImages }
+
+const StyledCard = styled.div`
+  background-color: #57534E;
+  padding: 2rem;
+  border-radius: .25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-top: 1rem;
+  h2 {
+    font-size: 1rem;
+  }
+  p {
+    margin-top: 1rem;
+    font-size: .875rem;
+  }
+  @media(min-width: 48rem) {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem 1rem;
+    h2 {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    p {
+      margin-top: 0;    
+      width: 25rem;
+      margin: auto;
+    }
+  }
+  @media(min-width: 64rem) {
+    p {
+    text-align: center;
+    margin: auto;
+    }
+  }
+`
+
+export {Main, Container, Item, DivEarlyLate, DivBgImages, StyledCard }

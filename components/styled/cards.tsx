@@ -8,7 +8,7 @@ import StatsEarly from './statsEarly'
 import ItensLate from './itensLate'
 import WeaponsLate from './weaponsLate'
 import StatsLate from './statsLate'
-import Items from './items'
+import Items from './item'
 
 const Card = styled.div`
   background-color: #57534E;
