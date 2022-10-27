@@ -5,6 +5,7 @@ import Title from '../components/styled/title'
 
 import { StructuredText, useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
+import Footer from '../components/styled/footer';
 
 const PROJECTS_QUERY = `
 query MyQuery {
@@ -49,13 +50,12 @@ const Characters = ({subscription}) => {
   return (  
   <>
       <Head>
-      <title>All Items - MetaBrotato</title>
-      <meta
-        name="description"
-        content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."
-      />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
+        <title>Brotato Meta All Items - MetaBrotato</title>
+        <meta
+          name="description"
+          content="Discover all Brotato Items - MetaBrotato."
+        />
+      </Head>
 
     <Header />
 
@@ -75,7 +75,8 @@ const Characters = ({subscription}) => {
         })}
       </Container>
     </Main>
-
+    
+    <Footer />
   </>
   )
 }

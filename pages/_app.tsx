@@ -35,15 +35,12 @@ export default function App({ Component, pageProps }: AppProps) {
     }
   }, [router.events])
   return (
-    <>
-    <Script
-      id="Adsense-id"
-      data-ad-client={gtag.AD_CA_PUB}
-      async
-      strategy="beforeInteractive"
-      crossOrigin='anonymous'
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    />
+    <>        
+      <script
+        async
+        src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_AD_CA_PUB}`}
+        crossOrigin="anonymous"
+      />
      <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}

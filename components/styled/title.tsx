@@ -2,7 +2,7 @@ import { useState } from 'react'
 import styled from 'styled-components'
 
 
-const StyledTitle = styled.h2`
+const StyledTitle = styled.h1`
   padding: 0 5%;
   margin-top: 2rem;
   font-size: 2rem;

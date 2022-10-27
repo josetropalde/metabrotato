@@ -25,7 +25,14 @@ export default class MyDocument extends Document {
   render() {
     return (
       <Html>
-        <Head />
+        <Head>
+          <title>Brotato Meta Best Strategies and Builds - MetaBrotato</title>
+          <meta
+            name="description"
+            content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."
+          />
+          <link rel="icon" href="/favicon.png" />
+        </Head>
         <body>
           <Main />
           <NextScript />

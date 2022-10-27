@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 const Main = styled.main`
   padding: 0 5%;
-  height: 100vh;
   @media (min-width: 64rem) {
     padding: 0 20%;
   }
@@ -80,4 +79,5 @@ const StatsImage = styled.img`
 max-width: 11.25rem;
 padding: .5rem .5rem .0 .5rem;
 `
+
 export {Main, Container, Item, DivEarlyLate, DivBgImages, StyledCard, StatsImage }

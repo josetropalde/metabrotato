@@ -22,19 +22,22 @@ const DivLogo = styled.div`
 display: flex;
 align-items: center;
 gap: 0 .5rem;
+cursor: pointer;
 `
 const StyledLogo = styled.img`
   width: 3.125rem;
 `
-const TextLogo = styled.h1`
+const TextLogo = styled.h2`
   font-size: 1.75rem;
 `
 const Logo = ({url, text}) => {
   return (
-    <DivLogo>
-      <StyledLogo src={url} />
-      <TextLogo>{text}</TextLogo>
-    </DivLogo>
+    <Link href='/'>
+      <DivLogo>
+        <StyledLogo src={url} />
+        <TextLogo>{text}</TextLogo>
+      </DivLogo>
+    </Link>
   )
 }
 
@@ -115,7 +118,7 @@ const Menu = ({mobileActive: Props}) => {
   return (
     <DivMenu mobileActive={Props}>
       <ul>
-      <Anchors><Link href="/">Strategies</Link></Anchors>
+        <Anchors><Link href="/strategies">Strategies</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>
       </ul>
@@ -126,7 +129,7 @@ const DesktopMenu = () => {
   return (
     <DivDesktopMenu>
       <ul>
-        <Anchors><Link href="/">Strategies</Link></Anchors>
+        <Anchors><Link href="/strategies">Strategies</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>
       </ul>
