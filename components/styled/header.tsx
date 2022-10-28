@@ -118,6 +118,7 @@ const Menu = ({mobileActive: Props}) => {
   return (
     <DivMenu mobileActive={Props}>
       <ul>
+        <Anchors><Link href="/">Home</Link></Anchors>
         <Anchors><Link href="/strategies">Strategies</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>
@@ -129,6 +130,7 @@ const DesktopMenu = () => {
   return (
     <DivDesktopMenu>
       <ul>
+        <Anchors><Link href="/">Home</Link></Anchors>
         <Anchors><Link href="/strategies">Strategies</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>

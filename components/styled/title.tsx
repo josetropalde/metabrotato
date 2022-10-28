@@ -6,10 +6,12 @@ const StyledTitle = styled.h1`
   padding: 0 5%;
   margin-top: 2rem;
   font-size: 2rem;
+  text-align: center;
   @media (min-width: 64rem) {
     padding: 0;
     font-size: 2.5rem;
     margin-top: 4rem;
+    text-align: start;
   }
 `
 
