@@ -17,16 +17,16 @@ const StyledTier =  styled.div<{tierColor?: string}>`
 const Tier = ({tier}) => {
   let tierColor: string;
   switch(tier) {
-    case "S":
+    case "A":
     tierColor = "#EF4444";
       break
-    case "A":
+    case "B":
     tierColor = "#F97316";
       break
-    case "B":
+    case "C":
     tierColor = "#EAB308";
       break
-    case "C":
+    case "D":
     tierColor = "#22c55e";
       break
   }

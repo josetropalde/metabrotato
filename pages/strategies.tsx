@@ -10,7 +10,7 @@ import Footer from '../components/styled/footer'
 
 const PROJECTS_QUERY = `
 query MyQuery {
-  allCards(orderBy: _createdAt_ASC) {
+  allCards(orderBy: tier_ASC) {
     tier
     name
     character {
