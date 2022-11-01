@@ -6,6 +6,7 @@ import Title from '../components/styled/title'
 import { StructuredText, useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
 import Footer from '../components/styled/footer';
+import Image from 'next/image';
 
 const PROJECTS_QUERY = `
 query MyQuery {
@@ -66,7 +67,7 @@ const Characters = ({subscription}) => {
           return (
             <StyledCard key={index}>
               <div>
-                <img src={item.itemImage[0].url} alt="" />
+                <Image src={item.itemImage[0].url} alt={`Item: ${item.itemName}`} width={'90px'} height={'90px'} />
                 <h2>{item.itemName}</h2>
               </div>
               <StructuredText data={item.itemDescription}/>

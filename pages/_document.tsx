@@ -24,7 +24,7 @@ export default class MyDocument extends Document {
   }
   render() {
     return (
-      <Html>
+      <Html lang='en'>
         <Head>
           <title>Brotato Meta Best Strategies and Builds - MetaBrotato</title>
           <meta
@@ -36,8 +36,7 @@ export default class MyDocument extends Document {
         <body>
           <Main />
           <NextScript />
-
-          {/* Global Site Tag (gtag.js) - Google Analytics */}
+          
           <script
             dangerouslySetInnerHTML={{
               __html: `

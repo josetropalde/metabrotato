@@ -10,7 +10,7 @@ const StyledFooter = styled.div`
   display: block;
   margin-top: 4rem;
   a {
-    color: ${({theme}) => theme.colors[500]};
+    color: ${({theme}) => theme.colors[300]};
     font-size: .75rem;
   }
   @media (min-width: 64rem) {

@@ -8,15 +8,6 @@ const Main = styled.main`
 `
 const Container = styled.div`
 margin-top: 2rem;
-
-`
-const Item = styled.img`
-  max-width: 40px;
-  margin: .0625rem .25rem;
-  @media(min-width: 80rem) {
-    max-width: 50px;
-    margin: .0625rem .25rem;
-  }
 `
 const DivEarlyLate = styled.div`
 display: block;
@@ -30,13 +21,12 @@ border-radius: 0.25rem;
 box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 margin: .5rem;
 position: relative;
-/* &::after {
-  content: '>';
-  position: absolute;
-  margin-left: .25rem;
-  top: 50%;
-  transform: translateY(-50%);
-} */
+img {
+  max-width: 2.5rem !important;
+  @media(min-width: 80rem) {
+    max-width: 3.125rem !important;
+  }
+}
 `
 
 const StyledCard = styled.div`
@@ -75,9 +65,17 @@ const StyledCard = styled.div`
     }
   }
 `
-const StatsImage = styled.img`
-max-width: 11.25rem;
+const StatsImage = styled.div`
+display: inline-block;
+background-color: ${({theme}) => theme.colors[700]};
+border-radius: 0.25rem;
+box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+margin: .5rem;
+position: relative;
 padding: .5rem .5rem .0 .5rem;
+img {
+  max-width: 11.25rem !important;
+}
 `
 
-export {Main, Container, Item, DivEarlyLate, DivBgImages, StyledCard, StatsImage }
+export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage }

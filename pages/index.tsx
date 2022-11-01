@@ -6,6 +6,8 @@ import Title from '../components/styled/title'
 import Footer from '../components/styled/footer'
 import styled from 'styled-components'
 import Link from 'next/link'
+import brotatoHome from '../public/brotato.png'
+import Image from 'next/image'
 
 const Introduction = styled.div`
 margin-top: 4rem;
@@ -66,7 +68,7 @@ const Home = () => {
       <Title text="The best place for Brotato stats and strategies" />
       <Container>
           <Introduction>
-            <img src="/brotato.png" alt="Welcome to MetaBrotato" />
+            <Image src={brotatoHome} alt="Welcome to MetaBrotato"/>
             <h3>MetaBrotato</h3>
             <p>Play smarter and win all danger levels with constantly updated guides, characters recommendations, and new meta strategies.</p>
           </Introduction>

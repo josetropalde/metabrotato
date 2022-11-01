@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import styled from 'styled-components'
 
 const DivCharacter = styled.div`
@@ -8,10 +9,12 @@ const DivCharacter = styled.div`
   }
 `
 
-const CharacterImage =  styled.img`
-max-width: 50px;
-@media (min-width: 80rem) {
-  max-width: 70px;
+const CharacterImage =  styled.div`
+img {
+  max-width: 50px !important;
+  @media (min-width: 80rem) {
+    max-width: 70px !important;
+  }
 }
 `
 const SecondaryTitle =  styled.h2`
@@ -25,7 +28,9 @@ const Character = ({character, name}) => {
   return (
   <>
     <DivCharacter>
-      <CharacterImage src={character.url} />
+      <CharacterImage>
+        <Image src={character.url} alt={`Character: ${name}`} width={'80px'} height={'80px'}/>
+      </CharacterImage>
       <SecondaryTitle>{name}</SecondaryTitle>
     </DivCharacter>
   </>

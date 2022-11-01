@@ -5,6 +5,16 @@ const nextConfig = {
   compiler: {
     styledComponents: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "www.datocms-assets.com",
+        port: "",
+        pathname: "/84301/**",
+      },
+    ],
+  },
 };
 
 module.exports = nextConfig;
