@@ -91,7 +91,7 @@ const Strategies = ({subscription}) => {
             tier={card.tier} 
             name={card.name} 
             character={card.character} 
-            items={card.items} 
+            weapons={card.items} 
 
             itemsEarly={card.itemsearly}
             weaponsEarly={card.weaponsearly}

@@ -62,7 +62,7 @@ const EarlyLateGame = styled.div`
   }
 `
 
-const Cards = ({tier, name, character, items, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
+const Cards = ({tier, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
   const [infoActive, setInfoActive] = useState(false);
   
   let display: string;
@@ -80,7 +80,7 @@ const Cards = ({tier, name, character, items, itemsEarly, weaponsEarly, statsEar
       <Card onClick={()=> setInfoActive(!infoActive)}>
         <Tier tier={tier}/>
         <Character name={name} character={character}/>
-        <Weapons weapons={items}/>
+        <Weapons weapons={weapons}/>
         <Arrow src="/angle-down-solid 1.png" alt="" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
       </Card>
 
