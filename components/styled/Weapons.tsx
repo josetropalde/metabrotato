@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styled from 'styled-components'
+import { DivBgImages } from './sharedstyles'
 
 const DivItens = styled.div`
 margin: auto;
@@ -21,14 +22,16 @@ img {
 }
 `
 
-const Item = ({items}) => {
+const Weapons = ({weapons}) => {
   return (
   <>
     <DivItens>
-      {items.map((item, index) => {
+      {weapons.map((item, index) => {
         return (
           <ItemImage key={index}>
+            <DivBgImages>
             <Image src={item.url} alt='Character Best Item' width={'90px'} height={'90px'}/>
+            </DivBgImages>
           </ItemImage>
         )
       })}
@@ -37,4 +40,4 @@ const Item = ({items}) => {
   )
 }
 
-export default Item;
+export default Weapons;

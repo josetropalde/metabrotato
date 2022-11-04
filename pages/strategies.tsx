@@ -7,6 +7,7 @@ import Title from '../components/styled/title'
 import { useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
 import Footer from '../components/styled/footer'
+import styled from 'styled-components'
 
 const PROJECTS_QUERY = `
 query MyQuery {
@@ -61,7 +62,10 @@ export async function getStaticProps(context) {
     },
   };
 }
-
+const Patch = styled.h2`
+  font-size: 1rem;
+  font-weight: normal;
+`
 const Strategies = ({subscription}) => {
 
   const { data, error, status } = useQuerySubscription(subscription);
@@ -79,6 +83,7 @@ const Strategies = ({subscription}) => {
 
     <Main>
       <Title text="Best Strategys" />
+      <Patch>Patch 0.6.0.7</Patch>
       <Container>
         {data.allCards.map((card, index) => {
           return (

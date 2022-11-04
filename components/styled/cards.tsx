@@ -8,7 +8,8 @@ import StatsEarly from './statsEarly'
 import ItensLate from './itensLate'
 import WeaponsLate from './weaponsLate'
 import StatsLate from './statsLate'
-import Items from './item'
+import Items from './Weapons'
+import Weapons from './Weapons'
 
 const Card = styled.div`
   background-color: #57534E;
@@ -79,7 +80,7 @@ const Cards = ({tier, name, character, items, itemsEarly, weaponsEarly, statsEar
       <Card onClick={()=> setInfoActive(!infoActive)}>
         <Tier tier={tier}/>
         <Character name={name} character={character}/>
-        <Items items={items}/>
+        <Weapons weapons={items}/>
         <Arrow src="/angle-down-solid 1.png" alt="" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
       </Card>
 
