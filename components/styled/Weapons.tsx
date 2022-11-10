@@ -12,7 +12,11 @@ margin: auto;
 }
 `
 const ItemImage = styled.div`
-display: inline;
+display: inline-block;
+background-color: ${({theme}) => theme.colors[700]};
+border-radius: 0.25rem;
+box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+position: relative;
 margin: .0625rem .25rem;
 img {
   max-width: 3.125rem !important;
@@ -29,9 +33,7 @@ const Weapons = ({weapons}) => {
       {weapons.map((item, index) => {
         return (
           <ItemImage key={index}>
-            <DivBgImages>
             <Image src={item.url} alt='Character Best Item' width={'90px'} height={'90px'}/>
-            </DivBgImages>
           </ItemImage>
         )
       })}

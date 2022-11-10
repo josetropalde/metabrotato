@@ -9,6 +9,7 @@ const StyledTier =  styled.div<{tierColor?: string}>`
   height: 35px;
   text-align: center;
   border-radius: .25rem;
+  display: block;
   order: 1;
   ${(props) => `background-color: ${props.tierColor}`}
 `

@@ -23,6 +23,7 @@ const Card = styled.div`
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  position: relative;
   @media(min-width: 64rem) {
     padding: 1.5rem;
   }
@@ -61,12 +62,37 @@ const EarlyLateGame = styled.div`
     width: 50%;
   }
 `
+const TagNew = styled.div<{isNewTag?: string}>`
+  position: absolute;
+  left: -0.3125rem;
+  border-radius: 50%;
+  display: ${(props) => props.isNewTag};
+  p {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fb7185;
+  }
+  span {
+    position: absolute;
+    font-size: .875rem;
+    display: none;
+    background-color: ${({theme}) => theme.colors[500]};
+    padding: .5rem;
+    left: -1rem;
+  }
+  &:hover span {
+    display: block;
+  }
+` 
 
-const Cards = ({tier, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
+
+
+const Cards = ({tier, isNew, difficulty, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
   const [infoActive, setInfoActive] = useState(false);
   
+  let isNewTag: string;
   let display: string;
-
+  
   useEffect(() => {
     if (window.innerWidth < 1024) {
       display = "block";
@@ -75,11 +101,17 @@ const Cards = ({tier, name, character, weapons, itemsEarly, weaponsEarly, statsE
     }
   }, []);
 
+  if(isNew) {
+    isNewTag = 'block'
+  } else {
+    isNewTag = 'none'
+  }
   return (
     <>
       <Card onClick={()=> setInfoActive(!infoActive)}>
-        <Tier tier={tier}/>
-        <Character name={name} character={character}/>
+        <TagNew isNewTag={isNewTag}><p>N</p><span>New!</span></TagNew>
+        <Tier tier={tier} />
+        <Character name={name} character={character} difficulty={difficulty}/>
         <Weapons weapons={weapons}/>
         <Arrow src="/angle-down-solid 1.png" alt="" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
       </Card>

@@ -26,7 +26,6 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
-          <title>Brotato Meta Best Strategies and Builds - MetaBrotato</title>
           <meta
             name="description"
             content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."

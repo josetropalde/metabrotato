@@ -13,6 +13,8 @@ const PROJECTS_QUERY = `
 query MyQuery {
   allCards(orderBy: tier_ASC) {
     tier
+    difficulty
+    isnew
     name
     character {
       url
@@ -69,6 +71,8 @@ const Patch = styled.h2`
 const Strategies = ({subscription}) => {
 
   const { data, error, status } = useQuerySubscription(subscription);
+
+
   return (  
   <>
     <Head>
@@ -91,7 +95,9 @@ const Strategies = ({subscription}) => {
             tier={card.tier} 
             name={card.name} 
             character={card.character} 
-            weapons={card.items} 
+            weapons={card.items}
+            isNew={card.isnew}
+            difficulty={card.difficulty}
 
             itemsEarly={card.itemsearly}
             weaponsEarly={card.weaponsearly}
