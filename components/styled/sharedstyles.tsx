@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const Main = styled.main`
   padding: 0 5%;
-  @media (min-width: 64rem) {
+  @media (min-width: 72rem) {
     padding: 0 20%;
   }
 `
