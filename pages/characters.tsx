@@ -10,7 +10,7 @@ import Image from 'next/image';
 
 const PROJECTS_QUERY = `
 query MyQuery {
-  allCharacters(first: 30) {
+  allCharacters(first: 100) {
     characterImage {
       url
     }
