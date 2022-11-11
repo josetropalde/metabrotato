@@ -8,6 +8,7 @@ import { useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
 import Footer from '../components/styled/footer'
 import styled from 'styled-components'
+import { Adsense } from '@ctrl/react-adsense'
 
 const PROJECTS_QUERY = `
 query MyQuery {
@@ -84,6 +85,16 @@ const Strategies = ({subscription}) => {
     </Head>
 
     <Header />
+
+    {/* <Adsense
+      className='adsbygoogle'
+      client="ca-pub-2203319803462882"
+      slot="6353395675"
+      style={{ display: 'block' }}
+      layout="in-article"
+      format="auto"
+      responsive='true'
+    /> */}
 
     <Main>
       <Title text="Best Strategys" />

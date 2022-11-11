@@ -6,6 +6,7 @@
     "start": "next start"
   },
   "dependencies": {
+    "@ctrl/react-adsense": "^1.6.1",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
     "next": "latest",

@@ -1,4 +1,5 @@
 import Document, { DocumentContext, Head, Html, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 import { ServerStyleSheet } from 'styled-components'
 
 export default class MyDocument extends Document {
@@ -26,6 +27,16 @@ export default class MyDocument extends Document {
     return (
       <Html lang='en'>
         <Head>
+        <script
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${process.env.NEXT_AD_CA_PUB}`}
+          crossOrigin="anonymous"
+        />
+          {/* <Script
+            async
+            src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
+            strategy="afterInteractive"
+          />  */}
           <meta
             name="description"
             content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."
