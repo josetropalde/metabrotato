@@ -42,6 +42,7 @@ query MyQuery {
       url
     }
   }
+
 }
 `;
 
@@ -72,7 +73,6 @@ const Patch = styled.h2`
 const Strategies = ({subscription}) => {
 
   const { data, error, status } = useQuerySubscription(subscription);
-
 
   return (  
   <>

@@ -119,13 +119,13 @@ const Cards = ({tier, isNew, difficulty, name, character, weapons, itemsEarly, w
       <CardInfo style={{display: infoActive ? display : 'none'}}>
         <EarlyLateGame>
           <EarlyLateTitle>Early Game</EarlyLateTitle>
-          <ItensEarly itemsEarly={itemsEarly}/>
+          <ItensEarly itemsEarly={itemsEarly} />
           <WeaponsEarly weaponsEarly={weaponsEarly}/>
           <StatsEarly statsEarly={statsEarly}/>
         </EarlyLateGame>
         <EarlyLateGame>
           <EarlyLateTitle>Late Game</EarlyLateTitle>
-          <ItensLate itemsLate={itemsLate}/>
+          <ItensLate itemsLate={itemsLate} />
           <WeaponsLate weaponsLate={weaponsLate}/>
           <StatsLate statsLate={statsLate}/>
         </EarlyLateGame>

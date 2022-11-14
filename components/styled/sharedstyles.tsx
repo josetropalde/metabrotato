@@ -27,8 +27,10 @@ img {
     max-width: 3.125rem !important;
   }
 }
+&:hover div {
+  display: block;
+}
 `
-
 const StyledCard = styled.div`
   background-color: #57534E;
   padding: 2rem;

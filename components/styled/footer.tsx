@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import { useState } from 'react'
 import styled from 'styled-components'
 
 
@@ -12,6 +11,7 @@ const StyledFooter = styled.div`
   a {
     color: ${({theme}) => theme.colors[300]};
     font-size: .75rem;
+    margin: 0 .5rem;
   }
   @media (min-width: 64rem) {
     margin-top: 8rem;
@@ -27,6 +27,8 @@ const Footer = () => {
     <StyledFooter>
       <p>© MetaBrotato 2022</p>
       <Link href='/privacy'>Privacy Policy</Link>
+      <Link href='/terms'>Terms & Conditions</Link>
+      <Link href='/contact'>Contact</Link>
     </StyledFooter>
   </>
   )

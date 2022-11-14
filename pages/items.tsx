@@ -46,7 +46,6 @@ export async function getStaticProps(context) {
 const Characters = ({subscription}) => {
 
   const { data, error, status } = useQuerySubscription(subscription);
-  console.log(data)
 
   return (  
   <>
