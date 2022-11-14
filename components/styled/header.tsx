@@ -14,7 +14,7 @@ const DivHeader = styled.div`
   justify-content: space-between;
   position: relative;
 
-  @media (min-width: 64rem) {
+  @media (min-width: 80rem) {
     padding: 1rem 20%;
   }
 `
@@ -34,7 +34,7 @@ const Logo = ({url, text}) => {
   return (
     <Link href='/'>
       <DivLogo>
-        <StyledLogo src={url} />
+        <StyledLogo src={url} alt="MetaBrotato Logos"/>
         <TextLogo>{text}</TextLogo>
       </DivLogo>
     </Link>
@@ -113,6 +113,18 @@ font-size: 1.125rem;
   font-size: 1rem;
 }
 `
+const Patreon = styled.div`
+background-color: ${({theme}) => theme.colors[100]};
+  display: inline-block;
+  border-radius: 2rem;
+  padding: .25rem .75rem;
+  color: ${({theme}) => theme.colors[900]};
+  cursor: pointer;
+  transition: .3s;
+  &:hover {
+  background-color: ${({theme}) => theme.colors[50]};
+  }
+`
 
 const Menu = ({mobileActive: Props}) => {
   return (
@@ -122,6 +134,7 @@ const Menu = ({mobileActive: Props}) => {
         <Anchors><Link href="/strategies">Strategies</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>
+        <Patreon><Link href="https://patreon.com/metabrotato" target='_blank' ><a target="_blank">Support Us!</a></Link></Patreon>
       </ul>
     </DivMenu>
   )
@@ -134,6 +147,7 @@ const DesktopMenu = () => {
         <Anchors><Link href="/strategies">Strategies</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>
+        <Patreon><Link href="https://patreon.com/metabrotato" target='_blank' ><a target="_blank">Support Us!</a></Link></Patreon>
       </ul>
     </DivDesktopMenu>
   )
