@@ -14,7 +14,7 @@ font-size: 1rem;
 }
 `
 
-const ItensLate = ({itemsLate, itensName, itensDesc, itensUrl}) => {
+const ItensLate = ({itemsLate}) => {
   return (
   <>
     <DivEarlyLate>
