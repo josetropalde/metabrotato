@@ -9,27 +9,37 @@
 
 <url>
   <loc>https://www.metabrotato.com/</loc>
-  <lastmod>2022-10-31T10:52:33+00:00</lastmod>
+  <lastmod>2022-11-14T10:52:33+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.metabrotato.com/strategies</loc>
-  <lastmod>2022-10-31T10:52:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2022-11-14T10:52:33+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.metabrotato.com/characters</loc>
-  <lastmod>2022-10-31T10:52:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2022-11-14T10:52:33+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.metabrotato.com/items</loc>
-  <lastmod>2022-10-31T10:52:33+00:00</lastmod>
-  <priority>0.80</priority>
+  <lastmod>2022-11-14T10:52:33+00:00</lastmod>
+  <priority>1.00</priority>
 </url>
 <url>
   <loc>https://www.metabrotato.com/privacy</loc>
-  <lastmod>2022-10-31T10:52:33+00:00</lastmod>
+  <lastmod>2022-11-14T10:52:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.metabrotato.com/contact</loc>
+  <lastmod>2022-11-14T10:52:33+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://www.metabrotato.com/terms</loc>
+  <lastmod>2022-11-14T10:52:33+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 
