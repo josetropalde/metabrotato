@@ -22,6 +22,7 @@ const Contact = () => {
   <>
       <Head>
         <title>Contact Us - MetaBrotato</title>
+        <meta name="title" content="Contact Us - MetaBrotato"></meta>
         <meta
           name="description"
           content="Contact - MetaBrotato."

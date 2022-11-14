@@ -51,10 +51,22 @@ const Characters = ({subscription}) => {
   <>
       <Head>
         <title>Brotato Meta All Characters - MetaBrotato</title>
+        <meta name="title" content="Brotato Meta All Characters - MetaBrotato"></meta>
         <meta
           name="description"
-          content="Discover all Brotato Characters - MetaBrotato."
+          content="Discover all Brotato Characters and improve your builds on Brotato - MetaBrotato."
         />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.metabrotato.com/characters" />
+      <meta property="og:title" content="Brotato Meta All Characters - MetaBrotato" /> 
+      <meta property="og:description" content="Discover all Brotato Characters and improve your builds on Brotato - MetaBrotato." />
+      <meta property="og:image" content="/characters.png" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://www.metabrotato.com/characters" />
+      <meta property="twitter:title" content="Brotato Meta All Characters - MetaBrotato" />
+      <meta property="twitter:description" content="Discover all Brotato Characters and improve your builds on Brotato - MetaBrotato." />
+      <meta property="twitter:image" content="/characters.png"></meta>
       </Head>
 
     <Header />

@@ -56,10 +56,23 @@ const Home = () => {
   <>
     <Head>
       <title>Brotato Meta Best Strategies, Meta, Guides - MetaBrotato</title>
+      <meta name="title" content="Brotato Meta Best Strategies, Meta, Guides - MetaBrotato"></meta>
       <meta
         name="description"
-        content="Discover best Brotato Strategies, Guides and Meta - MetaBrotato."
+        content="Discover best Brotato Strategies, Guides and Meta to improve your builds on Brotato - MetaBrotato."
       />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.metabrotato.com/" />
+      <meta property="og:title" content="Brotato Meta Best Strategies, Meta, Guides - MetaBrotato" /> 
+      <meta property="og:description" content="Discover best Brotato Strategies, Guides and Meta to improve your builds on Brotato - MetaBrotato." />
+      <meta property="og:image" content="/home.png" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://www.metabrotato.com/" />
+      <meta property="twitter:title" content="Brotato Meta Best Strategies, Meta, Guides - MetaBrotato" />
+      <meta property="twitter:description" content="Discover best Brotato Strategies, Guides and Meta to improve your builds on Brotato - MetaBrotato." />
+      <meta property="twitter:image" content="/home.png"></meta>
     </Head>
 
     <Header />

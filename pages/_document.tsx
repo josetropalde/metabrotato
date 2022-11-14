@@ -37,10 +37,6 @@ export default class MyDocument extends Document {
             src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
             strategy="afterInteractive"
           />  */}
-          <meta
-            name="description"
-            content="Discover the best Brotato Strategies, item builds, and more with MetaBrotato."
-          />
           <link rel="icon" href="/favicon.png" />
         </Head>
         <body>

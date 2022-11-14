@@ -78,10 +78,24 @@ const Strategies = ({subscription}) => {
   <>
     <Head>
       <title>Brotato Meta Best Strategies - MetaBrotato</title>
+      
+      <meta name="title" content="Brotato Meta Best Strategies - MetaBrotato"></meta>
       <meta
         name="description"
-        content="Discover best Brotato Strategies, Guides and Meta - MetaBrotato."
+        content="Discover best Brotato Strategies, Guides and Builds to win more runs on Brotato with the best builds of the meta - MetaBrotato."
       />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.metabrotato.com/strategies" />
+      <meta property="og:title" content="Brotato Meta Best Strategies - MetaBrotato" /> 
+      <meta property="og:description" content="Discover best Brotato Strategies, Guides and Builds to win more runs on Brotato with the best builds of the meta" />
+      <meta property="og:image" content="/strategies.png" />
+
+      <meta property="twitter:card" content="summary_large_image" />
+      <meta property="twitter:url" content="https://www.metabrotato.com/strategies" />
+      <meta property="twitter:title" content="Brotato Meta Best Strategies - MetaBrotato" />
+      <meta property="twitter:description" content="Discover best Brotato Strategies, Guides and Builds to win more runs on Brotato with the best builds of the meta" />
+      <meta property="twitter:image" content="/strategies.png"></meta>
     </Head>
 
     <Header />

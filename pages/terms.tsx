@@ -12,6 +12,8 @@ const Terms = () => {
   <>
       <Head>
         <title>Terms and Conditions - MetaBrotato</title>
+        
+      <meta name="title" content="Terms and Conditions - MetaBrotato"></meta>
         <meta
           name="description"
           content="Terms and Conditions - MetaBrotato."

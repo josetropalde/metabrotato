@@ -12,6 +12,8 @@ const Privacy = () => {
   <>
       <Head>
         <title>Privacy Policy - MetaBrotato</title>
+        
+      <meta name="title" content="Privacy Policy - MetaBrotato"></meta>
         <meta
           name="description"
           content="Privacy Policy - MetaBrotato."
