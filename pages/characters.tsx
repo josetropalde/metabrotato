@@ -1,12 +1,14 @@
+import React from 'react'
 import Head from 'next/head'
 import Header from '../components/styled/header'
-import { Container, Main, StyledCard } from '../components/styled/sharedstyles'
+import { Container, DivAds, Main, StyledCard } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
 
 import { StructuredText, useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
 import Footer from '../components/styled/footer';
 import Image from 'next/image';
+import { Adsense } from '@ctrl/react-adsense';
 
 const PROJECTS_QUERY = `
 query MyQuery {
@@ -71,6 +73,18 @@ const Characters = ({subscription}) => {
 
     <Header />
 
+    <DivAds>
+    <Adsense
+      className='adsbygoogle'
+      client="ca-pub-2203319803462882"
+      slot="6353395675"
+      style={{ display: 'block' }}
+      layout="in-article"
+      format="fluid"
+      responsive='true'
+    />
+    </DivAds>
+
     <Main>
       <Title text="All Characters"/>
       <Container>
@@ -88,6 +102,17 @@ const Characters = ({subscription}) => {
       </Container>
     </Main>
 
+    <DivAds>
+    <Adsense
+      className='adsbygoogle'
+      client="ca-pub-2203319803462882"
+      slot="6353395675"
+      style={{ display: 'block' }}
+      layout="in-article"
+      format="fluid"
+      responsive='true'
+    />
+    </DivAds>
     <Footer />
   </>
   )

@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Cards from '../components/styled/cards'
 import Header from '../components/styled/header'
-import { Container, Main } from '../components/styled/sharedstyles'
+import { Container, DivAds, Main } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
 
 import { useQuerySubscription } from "react-datocms";
@@ -12,10 +12,7 @@ import styled from 'styled-components'
 import { Adsense } from '@ctrl/react-adsense'
 
 
-const FixedAd = styled.div`
-position: fixed;
 
-`
 
 
 const PROJECTS_QUERY = `
@@ -107,16 +104,18 @@ const Strategies = ({subscription}) => {
     </Head>
 
     <Header />
+    <DivAds>
+      <Adsense
+        className='adsbygoogle'
+        client="ca-pub-2203319803462882"
+        slot="6353395675"
+        style={{ display: 'block' }}
+        layout="in-article"
+        format="fluid"
+        responsive='true'
+      />
+    </DivAds>
 
-    <Adsense
-      className='adsbygoogle'
-      client="ca-pub-2203319803462882"
-      slot="6353395675"
-      style={{ display: 'block' }}
-      layout="in-article"
-      format="fluid"
-      responsive='true'
-    />
 
     <Main>
       <Title text="Best Strategys" />
@@ -144,7 +143,7 @@ const Strategies = ({subscription}) => {
         })}
       </Container>
     </Main>
-
+    <DivAds>
     <Adsense
       className='adsbygoogle'
       client="ca-pub-2203319803462882"
@@ -154,7 +153,8 @@ const Strategies = ({subscription}) => {
       format="fluid"
       responsive='true'
     />
-
+    </DivAds>
+    
     <Footer />
   </>
   )

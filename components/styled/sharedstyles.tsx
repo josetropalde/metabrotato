@@ -79,5 +79,8 @@ img {
   max-width: 11.25rem !important;
 }
 `
+const DivAds = styled.div`
+margin: 4rem;
+`
 
-export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage }
+export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds }
