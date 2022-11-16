@@ -1,3 +1,4 @@
+import React from 'react'
 import Head from 'next/head'
 import Cards from '../components/styled/cards'
 import Header from '../components/styled/header'
@@ -9,6 +10,13 @@ import { request } from "../lib/datocms";
 import Footer from '../components/styled/footer'
 import styled from 'styled-components'
 import { Adsense } from '@ctrl/react-adsense'
+
+
+const FixedAd = styled.div`
+position: fixed;
+
+`
+
 
 const PROJECTS_QUERY = `
 query MyQuery {
@@ -100,15 +108,15 @@ const Strategies = ({subscription}) => {
 
     <Header />
 
-    {/* <Adsense
+    <Adsense
       className='adsbygoogle'
       client="ca-pub-2203319803462882"
       slot="6353395675"
       style={{ display: 'block' }}
       layout="in-article"
-      format="auto"
+      format="fluid"
       responsive='true'
-    /> */}
+    />
 
     <Main>
       <Title text="Best Strategys" />
@@ -137,7 +145,17 @@ const Strategies = ({subscription}) => {
       </Container>
     </Main>
 
-        <Footer />
+    <Adsense
+      className='adsbygoogle'
+      client="ca-pub-2203319803462882"
+      slot="6353395675"
+      style={{ display: 'block' }}
+      layout="in-article"
+      format="fluid"
+      responsive='true'
+    />
+
+    <Footer />
   </>
   )
 }
