@@ -81,6 +81,7 @@ img {
 `
 const DivAds = styled.div`
 margin: 4rem;
+text-align: center;
 `
 
 export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds }
