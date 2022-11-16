@@ -84,4 +84,46 @@ margin: 4rem;
 text-align: center;
 `
 
-export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds }
+
+
+
+const StickyAdLeft = styled.div`
+display: none;
+    @media (min-width: 75rem) {
+      margin-top: .625rem;
+    top: 6.25rem;
+    left: 1rem;
+    position: fixed;
+    overflow: hidden;
+    z-index: 997;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 200px;
+    visibility: visible;
+    }
+    @media(min-width: 90rem) {
+      left: 3rem;
+    }
+`
+const StickyAdRight = styled.div`
+display: none;
+    @media (min-width: 75rem) {
+      margin-top: .625rem;
+    top: 6.25rem;
+    right: 1rem;
+    position: fixed;
+    overflow: hidden;
+    z-index: 997;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    width: 200px;
+    visibility: visible;
+    }
+    @media(min-width: 90rem) {
+      right: 3rem;
+    }
+`
+
+export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds, StickyAdLeft, StickyAdRight }

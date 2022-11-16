@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Header from '../components/styled/header'
-import { Container, DivAds, Main, StyledCard } from '../components/styled/sharedstyles'
+import { Container, DivAds, Main, StickyAdLeft, StickyAdRight, StyledCard } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
 
 import { StructuredText, useQuerySubscription } from "react-datocms";
@@ -84,6 +84,27 @@ const Characters = ({subscription}) => {
       responsive='true'
     />
     </DivAds>
+
+    
+    <StickyAdLeft>
+      <Adsense
+          client="ca-pub-2203319803462882"
+          slot="8115163353"
+          style={{ display: 'block', width: '200px', height: '600px'  }}
+          format="none"
+        />
+    </StickyAdLeft>
+
+    <StickyAdRight>
+      <Adsense
+          client="ca-pub-2203319803462882"
+          slot="8115163353"
+          style={{ display: 'block', width: '200px', height: '600px'  }}
+          format="none"
+        />
+    </StickyAdRight>
+
+
 
     <Main>
       <Title text="All Characters"/>

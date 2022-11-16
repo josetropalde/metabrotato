@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Cards from '../components/styled/cards'
 import Header from '../components/styled/header'
-import { Container, DivAds, Main } from '../components/styled/sharedstyles'
+import { Container, DivAds, Main, StickyAdLeft, StickyAdRight } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
 
 import { useQuerySubscription } from "react-datocms";
@@ -10,8 +10,6 @@ import { request } from "../lib/datocms";
 import Footer from '../components/styled/footer'
 import styled from 'styled-components'
 import { Adsense } from '@ctrl/react-adsense'
-
-
 
 
 
@@ -116,6 +114,23 @@ const Strategies = ({subscription}) => {
       />
     </DivAds>
 
+    <StickyAdLeft>
+      <Adsense
+          client="ca-pub-2203319803462882"
+          slot="8115163353"
+          style={{ display: 'block', width: '200px', height: '600px'  }}
+          format="none"
+        />
+    </StickyAdLeft>
+
+    <StickyAdRight>
+      <Adsense
+          client="ca-pub-2203319803462882"
+          slot="8115163353"
+          style={{ display: 'block', width: '200px', height: '600px'  }}
+          format="none"
+        />
+    </StickyAdRight>
 
     <Main>
       <Title text="Best Strategys" />
