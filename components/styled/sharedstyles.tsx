@@ -127,7 +127,9 @@ display: none;
 `
 
 const InArticleAds = styled.div`
-margin: 1rem 0;
+margin: 1rem auto;
+width: 280px;
+text-align: center;
 @media (min-width: 64rem) {
   display: none !important;
 }
