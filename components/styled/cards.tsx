@@ -87,7 +87,7 @@ const TagNew = styled.div<{isNewTag?: string}>`
 
 
 
-const Cards = ({tier, isNew, difficulty, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
+const Cards = ({tier, isNew, difficulty, allItems, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
   const [infoActive, setInfoActive] = useState(false);
   
   let isNewTag: string;
@@ -119,13 +119,13 @@ const Cards = ({tier, isNew, difficulty, name, character, weapons, itemsEarly, w
       <CardInfo style={{display: infoActive ? display : 'none'}}>
         <EarlyLateGame>
           <EarlyLateTitle>Early Game</EarlyLateTitle>
-          <ItensEarly itemsEarly={itemsEarly} />
+          <ItensEarly allItems={allItems} itemsEarly={itemsEarly} />
           <WeaponsEarly weaponsEarly={weaponsEarly}/>
           <StatsEarly statsEarly={statsEarly}/>
         </EarlyLateGame>
         <EarlyLateGame>
           <EarlyLateTitle>Late Game</EarlyLateTitle>
-          <ItensLate itemsLate={itemsLate} />
+          <ItensLate allItems={allItems} itemsLate={itemsLate} />
           <WeaponsLate weaponsLate={weaponsLate}/>
           <StatsLate statsLate={statsLate}/>
         </EarlyLateGame>

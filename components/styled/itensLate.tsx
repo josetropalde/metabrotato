@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import { StructuredText } from 'react-datocms'
 import styled from 'styled-components'
-import { DivBgImages, DivEarlyLate } from './sharedstyles'
+import { DivBgImages, DivEarlyLate, HoverInfo } from './sharedstyles'
 
 const ItensHover = styled.div`
 position: absolute;
@@ -14,19 +15,27 @@ font-size: 1rem;
 }
 `
 
-const ItensLate = ({itemsLate}) => {
+const ItensLate = ({itemsLate, allItems}) => {
   return (
   <>
     <DivEarlyLate>
-      {itemsLate.map((item, index) => {
+      { 
+        itemsLate.map((item, index) => { 
+            for(let i = 0; i < 152; i++) {
+              if(allItems[i].itemImage[0].url == item.url) {
+                return (
+                  <DivBgImages key={index}>
+                    <Image src={item.url} alt="Item Early" width={'90px'} height={'90px'}/>
+                    <HoverInfo>
+                      <h6>{allItems[i].itemName}</h6>
+                      <StructuredText data={allItems[i].itemDescription.value} />
+                    </HoverInfo>
+                  </DivBgImages>
+                )
+              }
+            }
+          })} 
 
-        
-        return (
-          <DivBgImages key={index}>
-            <Image src={item.url} alt="Items Late" width={'90px'} height={'90px'}/>
-          </DivBgImages>
-        )
-      })}
     </DivEarlyLate>
   </>
   )
