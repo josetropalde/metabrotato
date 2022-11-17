@@ -1,6 +1,7 @@
 import Image from 'next/image'
+import { StructuredText } from 'react-datocms'
 import styled from 'styled-components'
-import { DivBgImages } from './sharedstyles'
+import { HoverInfo } from './sharedstyles'
 
 const DivItens = styled.div`
 margin: auto;
@@ -24,18 +25,28 @@ img {
     max-width: 4.375rem !important;
   }
 }
+&:hover ${HoverInfo}{
+    display: block;
+  }
 `
 
-const Weapons = ({weapons}) => {
+const Weapons = ({weapons, allWeapons}) => {
   return (
   <>
     <DivItens>
       {weapons.map((item, index) => {
-        return (
-          <ItemImage key={index}>
-            <Image src={item.url} alt='Character Best Item' width={'90px'} height={'90px'}/>
-          </ItemImage>
-        )
+        for(let i = 0; i < 45; i++) {
+          if(allWeapons[i].weaponImage.url == item.url) { 
+            return (
+              <ItemImage key={index}>
+                <Image src={item.url} alt='Character Best Item' width={'90px'} height={'90px'}/>
+                <HoverInfo>
+                  <h6>{allWeapons[i].weaponName}</h6>
+                  <StructuredText data={allWeapons[i].weaponDescription.value} />
+                </HoverInfo>
+              </ItemImage>
+            )
+          }}
       })}
     </DivItens>
   </>

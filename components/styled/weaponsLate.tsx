@@ -1,13 +1,28 @@
 import Image from 'next/image';
-import { DivBgImages, DivEarlyLate } from './sharedstyles';
+import { StructuredText } from 'react-datocms';
+import { DivBgImages, DivEarlyLate, HoverInfo } from './sharedstyles';
 
 
 
-const WeaponsLate = ({weaponsLate}) => {
+const WeaponsLate = ({weaponsLate, allWeapons}) => {
   return (
   <>
     <DivEarlyLate>
-      {weaponsLate.map((item, index) => <DivBgImages key={index}><Image src={item.url} alt="Weapons Late" width={'90px'} height={'90px'}/></DivBgImages>)}
+      {weaponsLate.map((item, index) => {
+        for(let i = 0; i < 45; i++) {
+          if(allWeapons[i].weaponImage.url == item.url) {  
+            return (
+              <DivBgImages key={index}>
+                <Image src={item.url} alt="Weapons Late" width={'90px'} height={'90px'}/>
+                <HoverInfo>
+                  <h6>{allWeapons[i].weaponName}</h6>
+                  <StructuredText data={allWeapons[i].weaponDescription.value} />
+                </HoverInfo>
+              </DivBgImages>
+            )
+          }}
+       
+      })}
     </DivEarlyLate>
   </>
   )

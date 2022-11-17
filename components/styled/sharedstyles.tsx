@@ -136,17 +136,22 @@ const HoverInfo = styled.div`
   display: none;
   position: absolute;
   z-index: -9999;
+  visibility: hidden;
+  overflow: hidden;
+  width: 0;
   @media (min-width: 64rem) {
   position: absolute;
+  visibility: visible;
   margin-top: .75rem;
   padding: 1rem;
   z-index: 100;
   font-size: .875rem;
   background-color: ${({theme}) => theme.colors[500]};
   text-align: start;
+  width: unset;
   min-width: 180px;
   color: ${({theme}) => theme.colors[300]};
-    &:hover {
+  &:hover {
     display: block;
   }
   h6 {

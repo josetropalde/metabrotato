@@ -44,6 +44,15 @@ query MyQuery {
       url
     }
   }
+  allWeapons(first: "100") {
+    weaponName
+    weaponImage {
+      url
+    }
+    weaponDescription {
+      value
+    }
+  }
 }
 `;
 
@@ -4203,7 +4212,6 @@ const Strategies = ({subscription}) => {
 
   const { data, error, status } = useQuerySubscription(subscription)
 
-  console.log(allItems)
   return (  
   <>
     <Head>
@@ -4275,7 +4283,7 @@ const Strategies = ({subscription}) => {
             difficulty={card.difficulty}
 
             allItems={allItems}
-
+            allWeapons={data.allWeapons}
             itemsEarly={card.itemsearly}
             weaponsEarly={card.weaponsearly}
             statsEarly={card.statsearly}
