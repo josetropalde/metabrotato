@@ -79,14 +79,13 @@ img {
   max-width: 11.25rem !important;
 }
 `
+
+
+
 const DivAds = styled.div`
 margin: 4rem;
 text-align: center;
 `
-
-
-
-
 const StickyAdLeft = styled.div`
 display: none;
     @media (min-width: 75rem) {

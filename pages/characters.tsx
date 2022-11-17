@@ -98,7 +98,7 @@ const Characters = ({subscription}) => {
     <StickyAdRight>
       <Adsense
           client="ca-pub-2203319803462882"
-          slot="8115163353"
+          slot="2870892765"
           style={{ display: 'block', width: '200px', height: '600px'  }}
           format="none"
         />
@@ -136,15 +136,15 @@ const Characters = ({subscription}) => {
     </Main>
 
     <DivAds>
-    <Adsense
-      className='adsbygoogle'
-      client="ca-pub-2203319803462882"
-      slot="6353395675"
-      style={{ display: 'block' }}
-      layout="in-article"
-      format="fluid"
-      responsive='true'
-    />
+      <Adsense
+        className='adsbygoogle'
+        client="ca-pub-2203319803462882"
+        slot="9274904617"
+        style={{ display: 'block' }}
+        layout="in-article"
+        format="fluid"
+        responsive='true'
+      />
     </DivAds>
     <Footer />
   </>
