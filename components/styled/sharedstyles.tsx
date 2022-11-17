@@ -126,4 +126,11 @@ display: none;
     }
 `
 
-export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds, StickyAdLeft, StickyAdRight }
+const InArticleAds = styled.div`
+margin: 1rem 0;
+@media (min-width: 64rem) {
+  display: none !important;
+}
+`
+
+export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds, StickyAdLeft, StickyAdRight, InArticleAds }

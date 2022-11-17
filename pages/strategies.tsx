@@ -2,7 +2,7 @@ import React from 'react'
 import Head from 'next/head'
 import Cards from '../components/styled/cards'
 import Header from '../components/styled/header'
-import { Container, DivAds, Main, StickyAdLeft, StickyAdRight } from '../components/styled/sharedstyles'
+import { Container, DivAds, InArticleAds, Main, StickyAdLeft, StickyAdRight } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
 
 import { useQuerySubscription } from "react-datocms";
@@ -138,6 +138,7 @@ const Strategies = ({subscription}) => {
       <Container>
         {data.allCards.map((card, index) => {
           return (
+            <>
             <Cards 
             tier={card.tier} 
             name={card.name} 
@@ -154,6 +155,17 @@ const Strategies = ({subscription}) => {
             weaponsLate={card.weaponslate}
             statsLate={card.statslate}
             key={index}/>
+
+            <InArticleAds style={{display: index % 3 == 1 ? 'block' : 'none'}}>
+            <Adsense
+              className='adsbygoogle'
+              client="ca-pub-2203319803462882"
+              slot="2191331953"
+              style={{ display: 'block', width: '280px', height: '150px'}}
+              format="none"
+            />
+            </InArticleAds> 
+            </>
           )
         })}
       </Container>

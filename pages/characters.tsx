@@ -1,7 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Header from '../components/styled/header'
-import { Container, DivAds, Main, StickyAdLeft, StickyAdRight, StyledCard } from '../components/styled/sharedstyles'
+import { Container, DivAds, InArticleAds, Main, StickyAdLeft, StickyAdRight, StyledCard } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
 
 import { StructuredText, useQuerySubscription } from "react-datocms";
@@ -111,6 +111,7 @@ const Characters = ({subscription}) => {
       <Container>
         {data.allCharacters.map((item, index) => {
           return (
+            <>
             <StyledCard key={index}>
               <div>
                 <Image src={item.characterImage[0].url} alt={`Character: ${item.characterName}`} width={'90px'} height={'90px'} />
@@ -118,6 +119,16 @@ const Characters = ({subscription}) => {
               </div>
               <StructuredText data={item.characterDescription}/>
             </StyledCard>
+            <InArticleAds style={{display: index % 3 == 1 ? 'block' : 'none'}}>
+            <Adsense
+              className='adsbygoogle'
+              client="ca-pub-2203319803462882"
+              slot="2191331953"
+              style={{ display: 'block', width: '280px', height: '150px'}}
+              format="none"
+            />
+            </InArticleAds> 
+            </>
           )
         })}
       </Container>
