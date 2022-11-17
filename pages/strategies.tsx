@@ -157,13 +157,14 @@ const Strategies = ({subscription}) => {
             key={index}/>
 
             <InArticleAds style={{display: index % 3 == 1 ? 'block' : 'none'}}>
-            <Adsense
-              className='adsbygoogle'
-              client="ca-pub-2203319803462882"
-              slot="2191331953"
-              style={{ display: 'block', width: '280px', height: '150px'}}
-              format="none"
-            />
+              <Adsense
+                className='adsbygoogle'
+                client="ca-pub-2203319803462882"
+                slot="6666420125"
+                style={{ display: 'block', textAlign: 'center'}}
+                layout="in-article"
+                format="fluid"
+              />
             </InArticleAds> 
             </>
           )
