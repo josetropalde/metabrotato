@@ -86,7 +86,6 @@ const Patch = styled.h2`
 `
 const Strategies = ({subscription}) => {
 
-
   let allItems = [ 
     {
       "itemImage": [
@@ -4259,12 +4258,15 @@ const Strategies = ({subscription}) => {
     </StickyAdLeft>
 
     <StickyAdRight>
-      <Adsense
-          client="ca-pub-2203319803462882"
-          slot="1657953257"
-          style={{ display: 'inline-block', width: '250px', height: '600px !important'  }}
-          format="autorelaxed"
-        />
+    <ins className="adsbygoogle"
+     style={{display: 'inline-block', width: '250px', height:'600px'}}
+     data-ad-client="ca-pub-2203319803462882"
+     data-ad-slot="1657953257"
+     data-matched-content-rows-num="4"
+     data-matched-content-columns-num="1"
+     data-matched-content-ui-type="image_stacked"
+     data-ad-format="autorelaxed"
+     ></ins>
     </StickyAdRight>
 
     <Main>
