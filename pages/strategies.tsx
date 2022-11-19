@@ -4256,12 +4256,6 @@ const Strategies = ({subscription}) => {
           style={{ display: 'block', width: '250px', height: '600px'  }}
           format="none"
         />
-      <Adsense
-          client="ca-pub-2203319803462882"
-          slot="8115163353"
-          style={{ display: 'block', width: '250px', height: '600px'  }}
-          format="none"
-        />
     </StickyAdLeft>
 
     <StickyAdRight>
@@ -4271,12 +4265,7 @@ const Strategies = ({subscription}) => {
           style={{ display: 'block', width: '250px', height: '600px'  }}
           format="none"
         />
-      <Adsense
-          client="ca-pub-2203319803462882"
-          slot="2870892765"
-          style={{ display: 'block', width: '250px', height: '600px', marginTop: 16  }}
-          format="none"
-        />
+
     </StickyAdRight>
 
     <Main>
