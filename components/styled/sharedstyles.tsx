@@ -129,7 +129,9 @@ const InArticleAds = styled.div`
 margin: 1rem auto;
 text-align: center;
 @media (min-width: 64rem) {
-  display: none !important;
+  ins:last-child {
+    display: none !important;
+  }
 }
 `
 const HoverInfo = styled.div`

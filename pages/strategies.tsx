@@ -4294,12 +4294,20 @@ const Strategies = ({subscription}) => {
             statsLate={card.statslate}
             key={index}/>
 
-            <InArticleAds style={{display: index % 3 == 1 ? 'block' : 'none'}}>
+            <InArticleAds style={{display: index % 5 == 1 ? 'block' : 'none'}}>
               <Adsense
                 className='adsbygoogle'
                 client="ca-pub-2203319803462882"
                 slot="6666420125"
                 style={{ display: 'block', textAlign: 'center'}}
+                layout="in-article"
+                format="fluid"
+              />
+              <Adsense
+                className='adsbygoogle'
+                client="ca-pub-2203319803462882"
+                slot="6666420125"
+                style={{ display: 'block', textAlign: 'center', marginTop: 16}}
                 layout="in-article"
                 format="fluid"
               />
