@@ -13,7 +13,7 @@ const WeaponsEarly = ({weaponsEarly, allWeapons}) => {
   <DivEarlyLate>
     {
     weaponsEarly.map((item, index) => {
-      for(let i = 0; i < 45; i++) {
+      for(let i = 0; i < 100; i++) {
         if(allWeapons[i].weaponImage.url == item.url) {  
           return (
             <DivBgImages key={index}>
