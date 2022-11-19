@@ -90,18 +90,18 @@ const Characters = ({subscription}) => {
     <StickyAdLeft>
       <Adsense
           client="ca-pub-2203319803462882"
-          slot="8115163353"
-          style={{ display: 'block', width: '200px', height: '600px'  }}
-          format="none"
+          slot="3245872250"
+          style={{ display: 'block', width: '250px', height: '600px'  }}
+          format="autorelaxed"
         />
     </StickyAdLeft>
 
     <StickyAdRight>
       <Adsense
           client="ca-pub-2203319803462882"
-          slot="2870892765"
-          style={{ display: 'block', width: '200px', height: '600px'  }}
-          format="none"
+          slot="1657953257"
+          style={{ display: 'block', width: '250px', height: '600px'  }}
+          format="autorelaxed"
         />
     </StickyAdRight>
 
@@ -121,12 +121,20 @@ const Characters = ({subscription}) => {
               </div>
               <StructuredText data={item.itemDescription}/>
             </StyledCard>
-            <InArticleAds style={{display: index % 3 == 1 ? 'block' : 'none'}}>
+            <InArticleAds style={{display: index % 5 == 1 ? 'block' : 'none'}}>
               <Adsense
                 className='adsbygoogle'
                 client="ca-pub-2203319803462882"
                 slot="6666420125"
                 style={{ display: 'block', textAlign: 'center'}}
+                layout="in-article"
+                format="fluid"
+              />
+              <Adsense
+                className='adsbygoogle'
+                client="ca-pub-2203319803462882"
+                slot="6666420125"
+                style={{ display: 'block', textAlign: 'center', marginTop: 16}}
                 layout="in-article"
                 format="fluid"
               />

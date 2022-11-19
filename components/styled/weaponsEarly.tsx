@@ -18,7 +18,7 @@ const WeaponsEarly = ({weaponsEarly, allWeapons}) => {
           return (
             <DivBgImages key={index}>
               <Image src={item.url} alt="Weapon Early" width={'90px'} height={'90px'}/>
-              <HoverInfo>
+              <HoverInfo style={{display: allWeapons[i].weaponName ? '' : 'none'}}>
                 <h6>{allWeapons[i].weaponName}</h6>
                 <StructuredText data={allWeapons[i].weaponDescription.value} />
               </HoverInfo>

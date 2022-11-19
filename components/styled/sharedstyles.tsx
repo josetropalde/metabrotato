@@ -98,7 +98,7 @@ display: none;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 200px;
+    width: 250px;
     visibility: visible;
     }
     @media(min-width: 90rem) {
@@ -117,7 +117,7 @@ display: none;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    width: 200px;
+    width: 250px;
     visibility: visible;
     }
     @media(min-width: 90rem) {
