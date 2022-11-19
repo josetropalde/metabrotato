@@ -88,18 +88,18 @@ const Characters = ({subscription}) => {
     <StickyAdLeft>
       <Adsense
           client="ca-pub-2203319803462882"
-          slot="3245872250"
+          slot="8115163353"
           style={{ display: 'block', width: '250px', height: '600px'  }}
-          format="autorelaxed"
+          format="none"
         />
     </StickyAdLeft>
 
     <StickyAdRight>
       <Adsense
           client="ca-pub-2203319803462882"
-          slot="1657953257"
+          slot="2870892765"
           style={{ display: 'block', width: '250px', height: '600px'  }}
-          format="autorelaxed"
+          format="none"
         />
     </StickyAdRight>
 

@@ -86,6 +86,7 @@ const Patch = styled.h2`
 `
 const Strategies = ({subscription}) => {
 
+
   let allItems = [ 
     {
       "itemImage": [
@@ -4251,22 +4252,19 @@ const Strategies = ({subscription}) => {
     <StickyAdLeft>
       <Adsense
           client="ca-pub-2203319803462882"
-          slot="3245872250"
-          style={{ display: 'inline-block', width: '250px', height: '600px !important'  }}
-          format="autorelaxed"
+          slot="8115163353"
+          style={{ display: 'block', width: '250px', height: '600px'  }}
+          format="none"
         />
     </StickyAdLeft>
 
     <StickyAdRight>
-    <ins className="adsbygoogle"
-     style={{display: 'inline-block', width: '250px', height:'600px'}}
-     data-ad-client="ca-pub-2203319803462882"
-     data-ad-slot="1657953257"
-     data-matched-content-rows-num="4"
-     data-matched-content-columns-num="1"
-     data-matched-content-ui-type="image_stacked"
-     data-ad-format="autorelaxed"
-     ></ins>
+      <Adsense
+          client="ca-pub-2203319803462882"
+          slot="2870892765"
+          style={{ display: 'block', width: '250px', height: '600px'  }}
+          format="none"
+        />
     </StickyAdRight>
 
     <Main>
@@ -4295,20 +4293,12 @@ const Strategies = ({subscription}) => {
             statsLate={card.statslate}
             key={index}/>
 
-            <InArticleAds style={{display: index % 5 == 1 ? 'block' : 'none'}}>
+            <InArticleAds style={{display: index % 3 == 1 ? 'block' : 'none'}}>
               <Adsense
                 className='adsbygoogle'
                 client="ca-pub-2203319803462882"
                 slot="6666420125"
                 style={{ display: 'block', textAlign: 'center'}}
-                layout="in-article"
-                format="fluid"
-              />
-              <Adsense
-                className='adsbygoogle'
-                client="ca-pub-2203319803462882"
-                slot="6666420125"
-                style={{ display: 'block', textAlign: 'center', marginTop: 16}}
                 layout="in-article"
                 format="fluid"
               />
