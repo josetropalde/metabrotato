@@ -78,7 +78,7 @@ const Characters = ({subscription}) => {
       className='adsbygoogle'
       client="ca-pub-2203319803462882"
       slot="6353395675"
-      style={{ display: 'block' }}
+      style={{ display: 'block', height: '300px' }}
       layout="in-article"
       format="fluid"
       responsive='true'
@@ -89,7 +89,7 @@ const Characters = ({subscription}) => {
       <Adsense
           client="ca-pub-2203319803462882"
           slot="8115163353"
-          style={{ display: 'block', width: '250px', height: '600px'  }}
+          style={{ display: 'block', width: '250px', height: '700px'  }}
           format="none"
         />
     </StickyAdLeft>
@@ -98,9 +98,10 @@ const Characters = ({subscription}) => {
       <Adsense
           client="ca-pub-2203319803462882"
           slot="2870892765"
-          style={{ display: 'block', width: '250px', height: '600px'  }}
+          style={{ display: 'block', width: '250px', height: '700px'  }}
           format="none"
         />
+
     </StickyAdRight>
 
 
