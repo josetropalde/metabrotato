@@ -83,7 +83,7 @@ img {
 
 
 const DivAds = styled.div`
-margin: 4rem;
+margin: 4rem 0;
 text-align: center;
 `
 const StickyAdLeft = styled.div`
@@ -92,7 +92,7 @@ display: none;
       margin-top: .625rem;
     top: 6.25rem;
     left: 1rem;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     z-index: 997;
     display: flex;
@@ -111,7 +111,7 @@ display: none;
       margin-top: .625rem;
     top: 6.25rem;
     right: 1rem;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
     z-index: 997;
     display: flex;
