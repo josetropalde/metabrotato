@@ -90,7 +90,7 @@ const Characters = ({subscription}) => {
           client="ca-pub-2203319803462882"
           slot="8115163353"
           style={{ display: 'block', width: '250px', height: '700px'  }}
-          format="none"
+          format="auto"
         />
     </StickyAdLeft>
 
@@ -99,7 +99,7 @@ const Characters = ({subscription}) => {
           client="ca-pub-2203319803462882"
           slot="2870892765"
           style={{ display: 'block', width: '250px', height: '700px'  }}
-          format="none"
+          format="auto"
         />
 
     </StickyAdRight>
