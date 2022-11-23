@@ -8,7 +8,6 @@ import StatsEarly from './statsEarly'
 import ItensLate from './itensLate'
 import WeaponsLate from './weaponsLate'
 import StatsLate from './statsLate'
-import Items from './Weapons'
 import Weapons from './Weapons'
 
 const Card = styled.div`
@@ -87,7 +86,7 @@ const TagNew = styled.div<{isNewTag?: string}>`
 
 
 
-const Cards = ({tier, isNew, difficulty, allItems, allWeapons, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
+const Cards = ({tier, isNew, difficulty, allItems, allWeapons,allCharacters, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
   const [infoActive, setInfoActive] = useState(false);
   
   let isNewTag: string;
@@ -111,7 +110,7 @@ const Cards = ({tier, isNew, difficulty, allItems, allWeapons, name, character, 
       <Card onClick={()=> setInfoActive(!infoActive)}>
         <TagNew isNewTag={isNewTag}><p>N</p><span>New!</span></TagNew>
         <Tier tier={tier} />
-        <Character name={name} character={character} difficulty={difficulty}/>
+        <Character name={name} character={character} difficulty={difficulty} allCharacters={allCharacters}/>
         <Weapons weapons={weapons} allWeapons={allWeapons}/>
         <Arrow src="/angle-down-solid 1.png" alt="" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
       </Card>

@@ -53,17 +53,23 @@ query MyQuery {
       value
     }
   }
+  allCharacters(first: "100") {
+    characterDescription {
+      value
+    }
+    characterName
+    characterImage {
+      url
+    }
+  }
 }
 `;
-
-let skip = 0;
 
 export async function getStaticProps(context) {
 
   const graphqlRequest: any = {
     query: PROJECTS_QUERY,
     includeDrafts: context.preview,
-    variables: {skip: skip}
   };
   return {
     props: {
@@ -86,6 +92,7 @@ const Patch = styled.h2`
 `
 const Strategies = ({subscription}) => {
 
+  const { data, error, status } = useQuerySubscription(subscription)
 
   let allItems = [ 
     {
@@ -4209,7 +4216,7 @@ const Strategies = ({subscription}) => {
     }
   ];
 
-  const { data, error, status } = useQuerySubscription(subscription)
+
 
   return (  
   <>
@@ -4284,6 +4291,8 @@ const Strategies = ({subscription}) => {
 
             allItems={allItems}
             allWeapons={data.allWeapons}
+            allCharacters={data.allCharacters}
+
             itemsEarly={card.itemsearly}
             weaponsEarly={card.weaponsearly}
             statsEarly={card.statsearly}
