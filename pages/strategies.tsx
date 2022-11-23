@@ -4242,9 +4242,9 @@ const Strategies = ({subscription}) => {
         className='adsbygoogle'
         client="ca-pub-2203319803462882"
         slot="6353395675"
-        style={{ display: 'block', height: '300px' }}
+        style={{ display: 'block' }}
         layout="in-article"
-        format="fluid"
+        format="auto"
         responsive='true'
       />
     </DivAds>
@@ -4325,7 +4325,7 @@ const Strategies = ({subscription}) => {
         slot="9274904617"
         style={{ display: 'block' }}
         layout="in-article"
-        format="fluid"
+        format="auto"
         responsive='true'
       />
     </DivAds>
