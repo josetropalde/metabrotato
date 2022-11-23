@@ -89,11 +89,6 @@ const Strategies = ({subscription}) => {
 
   let allItems = [ 
     {
-      "itemImage": [
-        {
-          "url": "https://www.datocms-assets.com/84301/1666695817-acid.png"
-        }
-      ],
       "itemName": "Acid",
       "itemDescription": {
         "value": {
@@ -113,14 +108,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695822-alien_baby.png"
+          "url": "https://www.datocms-assets.com/84301/1666695817-acid.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Alien Baby",
       "itemDescription": {
         "value": {
@@ -133,21 +128,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "+15 Max HP\n+8 Enemy Speed"
+                    "value": "+15 Max HP\n+8% Enemy Speed"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695826-alien_eyes.png"
+          "url": "https://www.datocms-assets.com/84301/1666695822-alien_baby.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Alien Eyes",
       "itemDescription": {
         "value": {
@@ -167,14 +162,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695830-alien_magic.png"
+          "url": "https://www.datocms-assets.com/84301/1666695826-alien_eyes.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Alien Magic",
       "itemDescription": {
         "value": {
@@ -194,14 +189,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695834-alien_tongue.png"
+          "url": "https://www.datocms-assets.com/84301/1666695830-alien_magic.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Alien Tongue",
       "itemDescription": {
         "value": {
@@ -221,14 +216,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695838-alien_worm.png"
+          "url": "https://www.datocms-assets.com/84301/1666695834-alien_tongue.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Alien Worm",
       "itemDescription": {
         "value": {
@@ -248,14 +243,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695843-alloy.png"
+          "url": "https://www.datocms-assets.com/84301/1666695838-alien_worm.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Alloy",
       "itemDescription": {
         "value": {
@@ -275,14 +270,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695848-baby_elephant.png"
+          "url": "https://www.datocms-assets.com/84301/1666695843-alloy.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Baby Elephant",
       "itemDescription": {
         "value": {
@@ -302,14 +297,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695852-baby_gecko-1.png"
+          "url": "https://www.datocms-assets.com/84301/1666695848-baby_elephant.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Baby Gecko",
       "itemDescription": {
         "value": {
@@ -329,14 +324,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695860-baby_with_a_beard.png"
+          "url": "https://www.datocms-assets.com/84301/1666695852-baby_gecko-1.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Baby with a Beard",
       "itemDescription": {
         "value": {
@@ -356,14 +351,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666695863-bag.png"
+          "url": "https://www.datocms-assets.com/84301/1666695860-baby_with_a_beard.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Bag",
       "itemDescription": {
         "value": {
@@ -383,14 +378,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735562-bandana.png"
+          "url": "https://www.datocms-assets.com/84301/1666695863-bag.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Bandana",
       "itemDescription": {
         "value": {
@@ -410,14 +405,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735571-banner.png"
+          "url": "https://www.datocms-assets.com/84301/1666735562-bandana.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Banner",
       "itemDescription": {
         "value": {
@@ -437,14 +432,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735576-barricade.png"
+          "url": "https://www.datocms-assets.com/84301/1666735571-banner.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Barricade",
       "itemDescription": {
         "value": {
@@ -464,14 +459,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735581-bat.png"
+          "url": "https://www.datocms-assets.com/84301/1666735576-barricade.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Bat",
       "itemDescription": {
         "value": {
@@ -491,14 +486,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735591-beanie.png"
+          "url": "https://www.datocms-assets.com/84301/1666735581-bat.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Beanie",
       "itemDescription": {
         "value": {
@@ -518,14 +513,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735587-bean_teacher.png"
+          "url": "https://www.datocms-assets.com/84301/1666735591-beanie.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Bean Teacher",
       "itemDescription": {
         "value": {
@@ -545,14 +540,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735595-big_arms.png"
+          "url": "https://www.datocms-assets.com/84301/1666735587-bean_teacher.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Big Arms",
       "itemDescription": {
         "value": {
@@ -572,14 +567,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735599-black_belt.png"
+          "url": "https://www.datocms-assets.com/84301/1666735595-big_arms.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Black Belt",
       "itemDescription": {
         "value": {
@@ -599,14 +594,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735602-blindfold.png"
+          "url": "https://www.datocms-assets.com/84301/1666735599-black_belt.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Blindfold",
       "itemDescription": {
         "value": {
@@ -626,14 +621,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735606-blood_donation.png"
+          "url": "https://www.datocms-assets.com/84301/1666735602-blindfold.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Blood Donation",
       "itemDescription": {
         "value": {
@@ -653,14 +648,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735610-blood_leech.png"
+          "url": "https://www.datocms-assets.com/84301/1666735606-blood_donation.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Blood Leech",
       "itemDescription": {
         "value": {
@@ -680,14 +675,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735613-boiling_water.png"
+          "url": "https://www.datocms-assets.com/84301/1666735610-blood_leech.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Boiling Water",
       "itemDescription": {
         "value": {
@@ -707,14 +702,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735617-book.png"
+          "url": "https://www.datocms-assets.com/84301/1666735613-boiling_water.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Book",
       "itemDescription": {
         "value": {
@@ -734,14 +729,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735621-bowler_hat.png"
+          "url": "https://www.datocms-assets.com/84301/1666735617-book.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Bowler Hat",
       "itemDescription": {
         "value": {
@@ -761,14 +756,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735624-boxing_glove.png"
+          "url": "https://www.datocms-assets.com/84301/1666735621-bowler_hat.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Boxing Glove",
       "itemDescription": {
         "value": {
@@ -788,14 +783,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735628-broken_mouth.png"
+          "url": "https://www.datocms-assets.com/84301/1666735624-boxing_glove.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Broken Mouth",
       "itemDescription": {
         "value": {
@@ -815,14 +810,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735631-butterfly.png"
+          "url": "https://www.datocms-assets.com/84301/1666735628-broken_mouth.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Butterfly",
       "itemDescription": {
         "value": {
@@ -842,14 +837,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735635-cake.png"
+          "url": "https://www.datocms-assets.com/84301/1666735631-butterfly.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Cake",
       "itemDescription": {
         "value": {
@@ -869,14 +864,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735638-campfire.png"
+          "url": "https://www.datocms-assets.com/84301/1666735635-cake.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Campfire",
       "itemDescription": {
         "value": {
@@ -896,14 +891,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735642-candle.png"
+          "url": "https://www.datocms-assets.com/84301/1666735638-campfire.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Candle",
       "itemDescription": {
         "value": {
@@ -923,14 +918,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735646-cape.png"
+          "url": "https://www.datocms-assets.com/84301/1666735642-candle.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Cape",
       "itemDescription": {
         "value": {
@@ -950,14 +945,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735649-chameleon.png"
+          "url": "https://www.datocms-assets.com/84301/1666735646-cape.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Chameleon",
       "itemDescription": {
         "value": {
@@ -977,14 +972,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735653-charcoal.png"
+          "url": "https://www.datocms-assets.com/84301/1666735649-chameleon.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Charcoal",
       "itemDescription": {
         "value": {
@@ -1004,14 +999,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735656-claw_tree.png"
+          "url": "https://www.datocms-assets.com/84301/1666735653-charcoal.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Claw Tree",
       "itemDescription": {
         "value": {
@@ -1031,14 +1026,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735660-clover.png"
+          "url": "https://www.datocms-assets.com/84301/1666735656-claw_tree.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Clover",
       "itemDescription": {
         "value": {
@@ -1058,14 +1053,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735664-coffee.png"
+          "url": "https://www.datocms-assets.com/84301/1666735660-clover.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Coffee",
       "itemDescription": {
         "value": {
@@ -1085,14 +1080,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735668-cog.png"
+          "url": "https://www.datocms-assets.com/84301/1666735664-coffee.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Cog",
       "itemDescription": {
         "value": {
@@ -1112,14 +1107,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735672-compass.png"
+          "url": "https://www.datocms-assets.com/84301/1666735668-cog.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Compass",
       "itemDescription": {
         "value": {
@@ -1139,14 +1134,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735675-coupon.png"
+          "url": "https://www.datocms-assets.com/84301/1666735672-compass.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Coupon",
       "itemDescription": {
         "value": {
@@ -1159,21 +1154,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "-6% Price"
+                    "value": "-5% Price"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735679-crown.png"
+          "url": "https://www.datocms-assets.com/84301/1666735675-coupon.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Crown",
       "itemDescription": {
         "value": {
@@ -1186,21 +1181,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "+10 Harvesting\nHarvesting increases by an additional +10% at the end of a wave"
+                    "value": "Harvesting increases by an additional +8% at the end of a wave (stacking)"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735682-cute_monkey.png"
+          "url": "https://www.datocms-assets.com/84301/1666735679-crown.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Cute Monkey",
       "itemDescription": {
         "value": {
@@ -1220,14 +1215,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735686-cyberball.png"
+          "url": "https://www.datocms-assets.com/84301/1666735682-cute_monkey.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Cyberball",
       "itemDescription": {
         "value": {
@@ -1247,14 +1242,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735690-cyclops_worm.png"
+          "url": "https://www.datocms-assets.com/84301/1666735686-cyberball.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Cyclops Worm",
       "itemDescription": {
         "value": {
@@ -1274,14 +1269,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735693-dangerous_bunny.png"
+          "url": "https://www.datocms-assets.com/84301/1666735690-cyclops_worm.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Dangerous Bunny",
       "itemDescription": {
         "value": {
@@ -1301,14 +1296,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735697-defective_steroids.png"
+          "url": "https://www.datocms-assets.com/84301/1666735693-dangerous_bunny.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Defective Steroids",
       "itemDescription": {
         "value": {
@@ -1328,14 +1323,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735701-diploma.png"
+          "url": "https://www.datocms-assets.com/84301/1666735697-defective_steroids.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Diploma",
       "itemDescription": {
         "value": {
@@ -1355,14 +1350,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735705-duct_tape.png"
+          "url": "https://www.datocms-assets.com/84301/1666735701-diploma.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Duct Tape",
       "itemDescription": {
         "value": {
@@ -1382,14 +1377,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735708-dynamite.png"
+          "url": "https://www.datocms-assets.com/84301/1666735705-duct_tape.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Dynamite",
       "itemDescription": {
         "value": {
@@ -1409,14 +1404,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735712-energy_bracelet.png"
+          "url": "https://www.datocms-assets.com/84301/1666735708-dynamite.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Energy Bracelet",
       "itemDescription": {
         "value": {
@@ -1436,14 +1431,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735716-esty-s_couch.png"
+          "url": "https://www.datocms-assets.com/84301/1666735712-energy_bracelet.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Esty's Couch",
       "itemDescription": {
         "value": {
@@ -1463,14 +1458,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735719-exoskeleton.png"
+          "url": "https://www.datocms-assets.com/84301/1666735716-esty-s_couch.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Exoskeleton",
       "itemDescription": {
         "value": {
@@ -1490,14 +1485,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735726-eyes_surgery.png"
+          "url": "https://www.datocms-assets.com/84301/1666735719-exoskeleton.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Eyes Surgery",
       "itemDescription": {
         "value": {
@@ -1517,14 +1512,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735730-fertilizer.png"
+          "url": "https://www.datocms-assets.com/84301/1666735726-eyes_surgery.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Fertilizer",
       "itemDescription": {
         "value": {
@@ -1544,14 +1539,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735734-fin.png"
+          "url": "https://www.datocms-assets.com/84301/1666735730-fertilizer.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Fin",
       "itemDescription": {
         "value": {
@@ -1571,14 +1566,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735737-focus.png"
+          "url": "https://www.datocms-assets.com/84301/1666735734-fin.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Focus",
       "itemDescription": {
         "value": {
@@ -1598,14 +1593,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735740-fuel_tank.png"
+          "url": "https://www.datocms-assets.com/84301/1666735737-focus.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Fuel Tank",
       "itemDescription": {
         "value": {
@@ -1625,14 +1620,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735744-gambling_token.png"
+          "url": "https://www.datocms-assets.com/84301/1666735740-fuel_tank.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Gambling Token",
       "itemDescription": {
         "value": {
@@ -1652,14 +1647,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735747-gentle_alien.png"
+          "url": "https://www.datocms-assets.com/84301/1666735744-gambling_token.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Gentle Alien",
       "itemDescription": {
         "value": {
@@ -1679,14 +1674,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735754-glasses.png"
+          "url": "https://www.datocms-assets.com/84301/1666735747-gentle_alien.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Glasses",
       "itemDescription": {
         "value": {
@@ -1706,14 +1701,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735750-glass_cannon.png"
+          "url": "https://www.datocms-assets.com/84301/1666735754-glasses.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Glass Cannon",
       "itemDescription": {
         "value": {
@@ -1733,14 +1728,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735758-gnome.png"
+          "url": "https://www.datocms-assets.com/84301/1666735750-glass_cannon.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Gnome",
       "itemDescription": {
         "value": {
@@ -1760,14 +1755,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735762-goat_skull-1.png"
+          "url": "https://www.datocms-assets.com/84301/1666735758-gnome.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Goat Skull",
       "itemDescription": {
         "value": {
@@ -1787,14 +1782,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736267-gummy_berserker.png"
+          "url": "https://www.datocms-assets.com/84301/1666735762-goat_skull-1.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Gummy Berserker",
       "itemDescription": {
         "value": {
@@ -1814,14 +1809,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736272-handcuffs.png"
+          "url": "https://www.datocms-assets.com/84301/1666736267-gummy_berserker.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Handcuffs",
       "itemDescription": {
         "value": {
@@ -1841,14 +1836,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736276-head_injury.png"
+          "url": "https://www.datocms-assets.com/84301/1666736272-handcuffs.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Head Injury",
       "itemDescription": {
         "value": {
@@ -1868,14 +1863,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736280-heavy_bullets.png"
+          "url": "https://www.datocms-assets.com/84301/1666736276-head_injury.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Heavy Bullets",
       "itemDescription": {
         "value": {
@@ -1895,14 +1890,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736284-hedgehog.png"
+          "url": "https://www.datocms-assets.com/84301/1666736280-heavy_bullets.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Hedgehog",
       "itemDescription": {
         "value": {
@@ -1922,14 +1917,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736288-helmet.png"
+          "url": "https://www.datocms-assets.com/84301/1666736284-hedgehog.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Helmet",
       "itemDescription": {
         "value": {
@@ -1949,14 +1944,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736292-hunting_trophy.png"
+          "url": "https://www.datocms-assets.com/84301/1666736288-helmet.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Hunting Trophy",
       "itemDescription": {
         "value": {
@@ -1969,21 +1964,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "+50% chance to get 1 material when killing an enemy with a critical hit"
+                    "value": "+33% chance to get 1 material when killing an enemy with a critical hit"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736299-injection.png"
+          "url": "https://www.datocms-assets.com/84301/1666736292-hunting_trophy.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Injection",
       "itemDescription": {
         "value": {
@@ -2003,14 +1998,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736303-insanity.png"
+          "url": "https://www.datocms-assets.com/84301/1666736299-injection.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Insanity",
       "itemDescription": {
         "value": {
@@ -2030,14 +2025,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736307-jet_pack.png"
+          "url": "https://www.datocms-assets.com/84301/1666736303-insanity.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Jet Pack",
       "itemDescription": {
         "value": {
@@ -2057,14 +2052,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736311-landmines.png"
+          "url": "https://www.datocms-assets.com/84301/1666736307-jet_pack.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Landmines",
       "itemDescription": {
         "value": {
@@ -2084,14 +2079,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736318-leather_vest.png"
+          "url": "https://www.datocms-assets.com/84301/1666736311-landmines.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Leather Vest",
       "itemDescription": {
         "value": {
@@ -2111,14 +2106,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736322-lemonade.png"
+          "url": "https://www.datocms-assets.com/84301/1666736318-leather_vest.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Lemonade",
       "itemDescription": {
         "value": {
@@ -2138,14 +2133,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736325-lens.png"
+          "url": "https://www.datocms-assets.com/84301/1666736322-lemonade.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Lens",
       "itemDescription": {
         "value": {
@@ -2165,14 +2160,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736328-little_frog.png"
+          "url": "https://www.datocms-assets.com/84301/1666736325-lens.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Little Frog",
       "itemDescription": {
         "value": {
@@ -2192,14 +2187,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736332-little_muscley_dude.png"
+          "url": "https://www.datocms-assets.com/84301/1666736328-little_frog.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Little Muscley Dude",
       "itemDescription": {
         "value": {
@@ -2219,14 +2214,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736336-lost_duck.png"
+          "url": "https://www.datocms-assets.com/84301/1666736332-little_muscley_dude.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Lost Duck",
       "itemDescription": {
         "value": {
@@ -2246,14 +2241,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736340-lucky_charm.png"
+          "url": "https://www.datocms-assets.com/84301/1666736336-lost_duck.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Lucky Charm",
       "itemDescription": {
         "value": {
@@ -2273,14 +2268,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736343-lumberjack_shirt.png"
+          "url": "https://www.datocms-assets.com/84301/1666736340-lucky_charm.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Lumberjack Shirt",
       "itemDescription": {
         "value": {
@@ -2300,14 +2295,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736347-mammoth.png"
+          "url": "https://www.datocms-assets.com/84301/1666736343-lumberjack_shirt.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Mammoth",
       "itemDescription": {
         "value": {
@@ -2327,14 +2322,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736350-mastery.png"
+          "url": "https://www.datocms-assets.com/84301/1666736347-mammoth.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Mastery",
       "itemDescription": {
         "value": {
@@ -2354,14 +2349,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736355-medal.png"
+          "url": "https://www.datocms-assets.com/84301/1666736350-mastery.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Medal",
       "itemDescription": {
         "value": {
@@ -2381,14 +2376,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736362-medikit.png"
+          "url": "https://www.datocms-assets.com/84301/1666736355-medal.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Medikit",
       "itemDescription": {
         "value": {
@@ -2408,14 +2403,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736366-metal_detector.png"
+          "url": "https://www.datocms-assets.com/84301/1666736362-medikit.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Metal Detector",
       "itemDescription": {
         "value": {
@@ -2435,14 +2430,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736369-metal_plate.png"
+          "url": "https://www.datocms-assets.com/84301/1666736366-metal_detector.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Metal Plate",
       "itemDescription": {
         "value": {
@@ -2462,14 +2457,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736373-missile.png"
+          "url": "https://www.datocms-assets.com/84301/1666736369-metal_plate.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Missile",
       "itemDescription": {
         "value": {
@@ -2489,14 +2484,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736376-mouse.png"
+          "url": "https://www.datocms-assets.com/84301/1666736373-missile.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Mouse",
       "itemDescription": {
         "value": {
@@ -2516,14 +2511,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736380-mushroom.png"
+          "url": "https://www.datocms-assets.com/84301/1666736376-mouse.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Mushroom",
       "itemDescription": {
         "value": {
@@ -2543,14 +2538,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736383-mutation.png"
+          "url": "https://www.datocms-assets.com/84301/1666736380-mushroom.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Mutation",
       "itemDescription": {
         "value": {
@@ -2570,14 +2565,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736386-night_goggles.png"
+          "url": "https://www.datocms-assets.com/84301/1666736383-mutation.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Night Goggles",
       "itemDescription": {
         "value": {
@@ -2597,14 +2592,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736391-octopus.png"
+          "url": "https://www.datocms-assets.com/84301/1666736386-night_goggles.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Octopus",
       "itemDescription": {
         "value": {
@@ -2624,14 +2619,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736395-padding.png"
+          "url": "https://www.datocms-assets.com/84301/1666736391-octopus.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Padding",
       "itemDescription": {
         "value": {
@@ -2651,14 +2646,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736398-panda.png"
+          "url": "https://www.datocms-assets.com/84301/1666736395-padding.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Panda",
       "itemDescription": {
         "value": {
@@ -2678,14 +2673,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736402-peaceful_bee.png"
+          "url": "https://www.datocms-assets.com/84301/1666736398-panda.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Peaceful Bee",
       "itemDescription": {
         "value": {
@@ -2705,14 +2700,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736406-pencil.png"
+          "url": "https://www.datocms-assets.com/84301/1666736402-peaceful_bee.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Pencil",
       "itemDescription": {
         "value": {
@@ -2732,14 +2727,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736409-piggy_bank.png"
+          "url": "https://www.datocms-assets.com/84301/1666736406-pencil.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Piggy Bank",
       "itemDescription": {
         "value": {
@@ -2759,14 +2754,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736413-plant.png"
+          "url": "https://www.datocms-assets.com/84301/1666736409-piggy_bank.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Plant",
       "itemDescription": {
         "value": {
@@ -2786,15 +2781,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736417-plastic_explosive.png"
+          "url": "https://www.datocms-assets.com/84301/1666736413-plant.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Plastic Explosive",
       "itemDescription": {
         "value": {
@@ -2814,14 +2808,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736420-poisonous_tonic.png"
+          "url": "https://www.datocms-assets.com/84301/1666736417-plastic_explosive.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Poisonous Tonic",
       "itemDescription": {
         "value": {
@@ -2841,14 +2835,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736424-potato.png"
+          "url": "https://www.datocms-assets.com/84301/1666736420-poisonous_tonic.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Potato",
       "itemDescription": {
         "value": {
@@ -2861,21 +2855,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "+3 Max HP\n+1 HP Regeneration\n+3% Damage\n+3% Speed\n+5 Luck"
+                    "value": "+3 Max HP\n+1 HP Regeneration\n+1% Life Steal\n+3% Damage\n+3% Speed\n+3% Dodge\n+1 Armor\n+5 Luck"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736428-power_generator.png"
+          "url": "https://www.datocms-assets.com/84301/1666736424-potato.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Power Generator",
       "itemDescription": {
         "value": {
@@ -2895,14 +2889,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736431-propeller_hat.png"
+          "url": "https://www.datocms-assets.com/84301/1666736428-power_generator.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Propeller Hat",
       "itemDescription": {
         "value": {
@@ -2922,14 +2916,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736435-pumpkin.png"
+          "url": "https://www.datocms-assets.com/84301/1666736431-propeller_hat.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Pumpkin",
       "itemDescription": {
         "value": {
@@ -2964,14 +2958,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736439-recycling_machine.png"
+          "url": "https://www.datocms-assets.com/84301/1666736435-pumpkin.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Recycling Machine",
       "itemDescription": {
         "value": {
@@ -2991,14 +2985,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736443-retromation-s_hoodie.png"
+          "url": "https://www.datocms-assets.com/84301/1666736439-recycling_machine.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Retromation's Hoodie",
       "itemDescription": {
         "value": {
@@ -3018,14 +3012,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736447-ricochet.png"
+          "url": "https://www.datocms-assets.com/84301/1666736443-retromation-s_hoodie.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Ricochet",
       "itemDescription": {
         "value": {
@@ -3038,21 +3032,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "Your projectiles gain +1 bounce\n-50% Damage"
+                    "value": "Your projectiles gain +1 bounce\n-35% Damage"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736450-rip_and_tear.png"
+          "url": "https://www.datocms-assets.com/84301/1666736447-ricochet.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Rip and Tear",
       "itemDescription": {
         "value": {
@@ -3072,14 +3066,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736454-ritual.png"
+          "url": "https://www.datocms-assets.com/84301/1666736450-rip_and_tear.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Ritual",
       "itemDescription": {
         "value": {
@@ -3099,14 +3093,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736458-robot_arm.png"
+          "url": "https://www.datocms-assets.com/84301/1666736454-ritual.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Robot Arm",
       "itemDescription": {
         "value": {
@@ -3126,14 +3120,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736461-sad_tomato.png"
+          "url": "https://www.datocms-assets.com/84301/1666736458-robot_arm.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Sad Tomato",
       "itemDescription": {
         "value": {
@@ -3153,14 +3147,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736465-scar.png"
+          "url": "https://www.datocms-assets.com/84301/1666736461-sad_tomato.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Scar",
       "itemDescription": {
         "value": {
@@ -3180,14 +3174,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736469-scared_sausage.png"
+          "url": "https://www.datocms-assets.com/84301/1666736465-scar.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Scared Sausage",
       "itemDescription": {
         "value": {
@@ -3207,14 +3201,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736473-scope.png"
+          "url": "https://www.datocms-assets.com/84301/1666736469-scared_sausage.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Scope",
       "itemDescription": {
         "value": {
@@ -3234,14 +3228,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736476-shady_potion.png"
+          "url": "https://www.datocms-assets.com/84301/1666736473-scope.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Shady Potion",
       "itemDescription": {
         "value": {
@@ -3261,14 +3255,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736480-shmoop.png"
+          "url": "https://www.datocms-assets.com/84301/1666736476-shady_potion.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Shmoop",
       "itemDescription": {
         "value": {
@@ -3288,14 +3282,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736484-sifd-s_relic.png"
+          "url": "https://www.datocms-assets.com/84301/1666736480-shmoop.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Sifd's Relic",
       "itemDescription": {
         "value": {
@@ -3315,14 +3309,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736487-small_magazine.png"
+          "url": "https://www.datocms-assets.com/84301/1666736484-sifd-s_relic.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Small Magazine",
       "itemDescription": {
         "value": {
@@ -3342,14 +3336,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736491-snail.png"
+          "url": "https://www.datocms-assets.com/84301/1666736487-small_magazine.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Snail",
       "itemDescription": {
         "value": {
@@ -3362,21 +3356,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "-10 Enemy Speed\n-5% Speed"
+                    "value": "-5 Enemy Speed\n-3% Speed"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736495-snake.png"
+          "url": "https://www.datocms-assets.com/84301/1666736491-snail.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Snake",
       "itemDescription": {
         "value": {
@@ -3396,14 +3390,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736498-spider.png"
+          "url": "https://www.datocms-assets.com/84301/1666736495-snake.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Spider",
       "itemDescription": {
         "value": {
@@ -3423,14 +3417,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736502-statue.png"
+          "url": "https://www.datocms-assets.com/84301/1666736498-spider.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Statue",
       "itemDescription": {
         "value": {
@@ -3450,14 +3444,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736505-sunglasses.png"
+          "url": "https://www.datocms-assets.com/84301/1666736502-statue.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Sunglasses",
       "itemDescription": {
         "value": {
@@ -3477,14 +3471,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736509-terrified_onion.png"
+          "url": "https://www.datocms-assets.com/84301/1666736505-sunglasses.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Terrified Onion",
       "itemDescription": {
         "value": {
@@ -3504,14 +3498,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736514-toolbox.png"
+          "url": "https://www.datocms-assets.com/84301/1666736509-terrified_onion.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Toolbox",
       "itemDescription": {
         "value": {
@@ -3531,14 +3525,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736517-torture.png"
+          "url": "https://www.datocms-assets.com/84301/1666736514-toolbox.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Torture",
       "itemDescription": {
         "value": {
@@ -3558,14 +3552,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736521-toxic_sludge.png"
+          "url": "https://www.datocms-assets.com/84301/1666736517-torture.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Toxic Sludge",
       "itemDescription": {
         "value": {
@@ -3585,14 +3579,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736525-tractor.png"
+          "url": "https://www.datocms-assets.com/84301/1666736521-toxic_sludge.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Tractor",
       "itemDescription": {
         "value": {
@@ -3605,21 +3599,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "+60 Harvesting\n-10% Damage"
+                    "value": "+40 Harvesting\n-8% Damage"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736529-tree.png"
+          "url": "https://www.datocms-assets.com/84301/1666736525-tractor.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Tree",
       "itemDescription": {
         "value": {
@@ -3639,14 +3633,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736532-triangle_of_power.png"
+          "url": "https://www.datocms-assets.com/84301/1666736529-tree.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Triangle of Power",
       "itemDescription": {
         "value": {
@@ -3666,14 +3660,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736536-turret.png"
+          "url": "https://www.datocms-assets.com/84301/1666736532-triangle_of_power.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Turret",
       "itemDescription": {
         "value": {
@@ -3693,14 +3687,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736296-incendiary_turret.png"
+          "url": "https://www.datocms-assets.com/84301/1666736536-turret.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Incendiary Turret",
       "itemDescription": {
         "value": {
@@ -3720,14 +3714,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736358-medical_turret.png"
+          "url": "https://www.datocms-assets.com/84301/1666736296-incendiary_turret.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Medical Turret",
       "itemDescription": {
         "value": {
@@ -3747,14 +3741,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736315-laser_turret.png"
+          "url": "https://www.datocms-assets.com/84301/1666736358-medical_turret.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Laser Turret",
       "itemDescription": {
         "value": {
@@ -3774,14 +3768,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666735723-explosive_turret.png"
+          "url": "https://www.datocms-assets.com/84301/1666736315-laser_turret.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Explosive Turret",
       "itemDescription": {
         "value": {
@@ -3801,14 +3795,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736540-tyler.png"
+          "url": "https://www.datocms-assets.com/84301/1666735723-explosive_turret.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Tyler",
       "itemDescription": {
         "value": {
@@ -3828,14 +3822,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736544-ugly_tooth.png"
+          "url": "https://www.datocms-assets.com/84301/1666736540-tyler.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Ugly Tooth",
       "itemDescription": {
         "value": {
@@ -3855,14 +3849,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736547-vigilante_ring.png"
+          "url": "https://www.datocms-assets.com/84301/1666736544-ugly_tooth.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Vigilante Ring",
       "itemDescription": {
         "value": {
@@ -3882,14 +3876,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736552-wandering_bot.png"
+          "url": "https://www.datocms-assets.com/84301/1666736547-vigilante_ring.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Wandering Bot",
       "itemDescription": {
         "value": {
@@ -3909,14 +3903,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736555-warrior_helmet.png"
+          "url": "https://www.datocms-assets.com/84301/1666736552-wandering_bot.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Warrior Helmet",
       "itemDescription": {
         "value": {
@@ -3929,21 +3923,21 @@ const Strategies = ({subscription}) => {
                 "children": [
                   {
                     "type": "span",
-                    "value": "+3 Armor\n+5 Max HP\n-10% Speed"
+                    "value": "+3 Armor\n+5 Max HP\n-5% Speed"
                   }
                 ]
               }
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736559-weird_food.png"
+          "url": "https://www.datocms-assets.com/84301/1666736555-warrior_helmet.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Weird Food",
       "itemDescription": {
         "value": {
@@ -3963,14 +3957,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736563-weird_ghost.png"
+          "url": "https://www.datocms-assets.com/84301/1666736559-weird_food.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Weird Ghost",
       "itemDescription": {
         "value": {
@@ -3990,14 +3984,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736566-wheat.png"
+          "url": "https://www.datocms-assets.com/84301/1666736563-weird_ghost.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Wheat",
       "itemDescription": {
         "value": {
@@ -4017,14 +4011,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736570-wheelbarrow.png"
+          "url": "https://www.datocms-assets.com/84301/1666736566-wheat.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Wheelbarrow",
       "itemDescription": {
         "value": {
@@ -4044,14 +4038,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736573-whetstone.png"
+          "url": "https://www.datocms-assets.com/84301/1666736570-wheelbarrow.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Whetstone",
       "itemDescription": {
         "value": {
@@ -4071,14 +4065,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736577-white_flag.png"
+          "url": "https://www.datocms-assets.com/84301/1666736573-whetstone.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "White Flag",
       "itemDescription": {
         "value": {
@@ -4098,14 +4092,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736582-wings.png"
+          "url": "https://www.datocms-assets.com/84301/1666736577-white_flag.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Wings",
       "itemDescription": {
         "value": {
@@ -4125,14 +4119,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736586-wisdom.png"
+          "url": "https://www.datocms-assets.com/84301/1666736582-wings.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Wisdom",
       "itemDescription": {
         "value": {
@@ -4152,14 +4146,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1666736589-wolf_helmet.png"
+          "url": "https://www.datocms-assets.com/84301/1666736586-wisdom.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Wolf Helmet",
       "itemDescription": {
         "value": {
@@ -4179,14 +4173,14 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
-    },
-    {
+      },
       "itemImage": [
         {
-          "url": "https://www.datocms-assets.com/84301/1667238386-explosive_shells.png"
+          "url": "https://www.datocms-assets.com/84301/1666736589-wolf_helmet.png"
         }
-      ],
+      ]
+    },
+    {
       "itemName": "Explosive Shells",
       "itemDescription": {
         "value": {
@@ -4206,7 +4200,12 @@ const Strategies = ({subscription}) => {
             ]
           }
         }
-      }
+      },
+      "itemImage": [
+        {
+          "url": "https://www.datocms-assets.com/84301/1667238386-explosive_shells.png"
+        }
+      ]
     }
   ];
 
