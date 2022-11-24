@@ -129,7 +129,7 @@ const Characters = ({subscription}) => {
                 slot="6666420125"
                 style={{ display: 'block', textAlign: 'center'}}
                 layout="in-article"
-                format="fluid"
+                format="auto"
               />
               <Adsense
                 className='adsbygoogle'
@@ -137,7 +137,7 @@ const Characters = ({subscription}) => {
                 slot="6666420125"
                 style={{ display: 'block', textAlign: 'center', marginTop: 16}}
                 layout="in-article"
-                format="fluid"
+                format="auto"
               />
             </InArticleAds> 
             </>
