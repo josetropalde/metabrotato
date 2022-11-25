@@ -1,6 +1,4 @@
-import { useEffect } from 'react'
 import styled from 'styled-components'
-
 
 const Main = styled.main`
   padding: 0 5%;
@@ -82,6 +80,8 @@ img {
 }
 `
 
+
+
 const DivAds = styled.div`
 margin: 4rem 0;
 text-align: center;
@@ -91,7 +91,7 @@ display: none;
     @media (min-width: 75rem) {
       margin-top: .625rem;
     top: 6.25rem;
-    left: 0;
+    left: 1rem;
     position: fixed;
     overflow: hidden;
     z-index: 997;
@@ -101,14 +101,8 @@ display: none;
     width: 250px;
     visibility: visible;
     }
-    @media (min-width: 90rem) {
-      width: 275px;
-    }
-    @media (min-width: 100rem) {
-      width: 315px;
-    }
-    @media (min-width: 112.5rem) {
-      width: 350px;
+    @media(min-width: 90rem) {
+      left: 3rem;
     }
 `
 const StickyAdRight = styled.div`
@@ -116,7 +110,7 @@ display: none;
     @media (min-width: 75rem) {
       margin-top: .625rem;
     top: 6.25rem;
-    right: 0;
+    right: 1rem;
     position: fixed;
     overflow: hidden;
     z-index: 997;
@@ -126,14 +120,8 @@ display: none;
     width: 250px;
     visibility: visible;
     }
-    @media (min-width: 90rem) {
-      width: 275px;
-    }
-    @media (min-width: 100rem) {
-      width: 315px;
-    }
-    @media (min-width: 112.5rem) {
-      width: 350px;
+    @media(min-width: 90rem) {
+      right: 3rem;
     }
 `
 

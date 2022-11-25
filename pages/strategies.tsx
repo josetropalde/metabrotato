@@ -4259,8 +4259,8 @@ const Strategies = ({subscription}) => {
       <Adsense
           client="ca-pub-2203319803462882"
           slot="8115163353"
-          style={{ display: 'block', width: '100%', height: '80vh'  }}
-          format="none"
+          style={{ display: 'block', width: '250px', height: '700px'  }}
+          format="auto"
         />
     </StickyAdLeft>
 
@@ -4268,8 +4268,8 @@ const Strategies = ({subscription}) => {
       <Adsense
           client="ca-pub-2203319803462882"
           slot="2870892765"
-          style={{ display: 'block',width: '100%', height: '80vh'  }}
-          format="none"
+          style={{ display: 'block', width: '250px', height: '700px'  }}
+          format="auto"
         />
 
     </StickyAdRight>
