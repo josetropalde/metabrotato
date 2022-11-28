@@ -119,7 +119,7 @@ const Characters = ({subscription}) => {
               </div>
               <StructuredText data={item.characterDescription}/>
             </StyledCard>
-            <InArticleAds style={{display: index % 5 == 1 ? 'block' : 'none'}}>
+            <InArticleAds style={{display: index % 4 == 1 ? 'block' : 'none'}}>
               <Adsense
                 className='adsbygoogle'
                 client="ca-pub-2203319803462882"
