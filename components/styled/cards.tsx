@@ -11,8 +11,6 @@ import StatsLate from './statsLate'
 import Weapons from './weapons'
 import Votes from './votes'
 import { useAuth } from '../../context/AuthContext'
-import { db } from '../../config/firebase'
-import { collection, onSnapshot } from 'firebase/firestore'
 
 const Card = styled.div`
   background-color: #57534E;
@@ -43,7 +41,6 @@ const CardInfo = styled.div`
   border-radius: .25rem;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  cursor: pointer;
   @media (min-width: 64rem) {  
     display: flex;
     justify-content: space-between;
