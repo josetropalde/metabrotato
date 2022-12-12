@@ -8,7 +8,11 @@ import StatsEarly from './statsEarly'
 import ItensLate from './itensLate'
 import WeaponsLate from './weaponsLate'
 import StatsLate from './statsLate'
-import Weapons from './Weapons'
+import Weapons from './weapons'
+import Votes from './votes'
+import { useAuth } from '../../context/AuthContext'
+import { db } from '../../config/firebase'
+import { collection, onSnapshot } from 'firebase/firestore'
 
 const Card = styled.div`
   background-color: #57534E;
@@ -16,7 +20,6 @@ const Card = styled.div`
   border-radius: .25rem;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  cursor: pointer;
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
@@ -29,6 +32,7 @@ const Card = styled.div`
 `
 const Arrow = styled.img`
   max-width: 20px;
+  cursor: pointer;
   order: 3;
   @media (min-width: 35.9375rem) {
   order: 4;
@@ -86,9 +90,10 @@ const TagNew = styled.div<{isNewTag?: string}>`
 
 
 
-const Cards = ({tier, isNew, difficulty, allItems, allWeapons,allCharacters, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
+const Cards = ({tier, isNew, difficulty,rank, cardID, allItems, allWeapons,allCharacters, name, character, weapons, itemsEarly, weaponsEarly, statsEarly, itemsLate,weaponsLate,statsLate}) => {
   const [infoActive, setInfoActive] = useState(false);
-  
+  const {user} = useAuth();
+
   let isNewTag: string;
   let display: string;
   
@@ -105,14 +110,19 @@ const Cards = ({tier, isNew, difficulty, allItems, allWeapons,allCharacters, nam
   } else {
     isNewTag = 'none'
   }
+
+
+
+
   return (
     <>
-      <Card onClick={()=> setInfoActive(!infoActive)}>
+      <Card>
         <TagNew isNewTag={isNewTag}><p>N</p><span>New!</span></TagNew>
-        <Tier tier={tier} />
+        {rank ? '' : <Tier tier={tier} cardID={cardID}/>}
         <Character name={name} character={character} difficulty={difficulty} allCharacters={allCharacters}/>
+        {rank ? user ? <Votes cardID={cardID}/> : '' : ''}
         <Weapons weapons={weapons} allWeapons={allWeapons}/>
-        <Arrow src="/angle-down-solid 1.png" alt="" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
+        <Arrow onClick={()=> setInfoActive(!infoActive)} src="/angle-down-solid 1.png" alt="Open Card" style={{transform: infoActive ? 'rotate(180deg)' : 'none'}}/>
       </Card>
 
       <CardInfo style={{display: infoActive ? display : 'none'}}>

@@ -1,6 +1,8 @@
 import Link from 'next/link'
+import { Router, useRouter } from 'next/router'
 import { useEffect, useState } from 'react'
 import styled from 'styled-components'
+import { useAuth } from '../../context/AuthContext'
 
 interface Props {
   mobileActive?: boolean
@@ -82,10 +84,10 @@ display: none;
   ${(props: Props)  => {
     if(props.mobileActive) {
       return`
-        height: 13.9375rem;
+        height: 350px;
         visibility: visible;
         overflow: auto;
-        padding: 1rem 5%;
+        padding: .5rem 5%;
       `
     }
   }
@@ -98,6 +100,13 @@ display: none;
 @media (min-width: 64rem) {
 margin-left: auto;
 display: block;
+text-align: center;
+position: absolute;
+top: 100%;
+left: 0;
+background-color: ${({theme}) => theme.colors[900]};
+width: 100%;
+padding: 1rem 0;
 text-align: center;
 }
 `
@@ -113,11 +122,12 @@ font-size: 1.125rem;
   font-size: 1rem;
 }
 `
-const Patreon = styled.div`
+const HeaderButton = styled.div`
 background-color: ${({theme}) => theme.colors[100]};
   display: inline-block;
-  border-radius: 2rem;
-  padding: .25rem .75rem;
+  border-radius: .5rem;
+  margin: 0 .5rem;
+  padding: .25rem 1rem;
   color: ${({theme}) => theme.colors[900]};
   cursor: pointer;
   transition: .3s;
@@ -127,14 +137,16 @@ background-color: ${({theme}) => theme.colors[100]};
 `
 
 const Menu = ({mobileActive: Props}) => {
+  const { user, logOut } = useAuth()
+  const router = useRouter();
   return (
     <DivMenu mobileActive={Props}>
       <ul>
         <Anchors><Link href="/">Home</Link></Anchors>
+        <Anchors><Link href="/rank">Rank</Link></Anchors>
         <Anchors><Link href="/strategies">Strategies</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>
-        <Patreon><Link href="https://patreon.com/metabrotato" target='_blank' ><a target="_blank">Support Us!</a></Link></Patreon>
       </ul>
     </DivMenu>
   )
@@ -145,15 +157,27 @@ const DesktopMenu = () => {
       <ul>
         <Anchors><Link href="/">Home</Link></Anchors>
         <Anchors><Link href="/strategies">Strategies</Link></Anchors>
+        <Anchors><Link href="/rank">Rank</Link></Anchors>
         <Anchors><Link href="/characters">Characters</Link></Anchors>
         <Anchors><Link href="/items">Items</Link></Anchors>
-        <Patreon><Link href="https://patreon.com/metabrotato" target='_blank' ><a target="_blank">Support Us!</a></Link></Patreon>
       </ul>
     </DivDesktopMenu>
   )
 }
 
-
+const HeaderInfo = (mobile) => {
+  const { user, logOut } = useAuth()
+  const router = useRouter();  
+  return (
+    <div style={{textAlign: mobile.mobile == false ? 'center' : 'start', padding: mobile.mobile == false  ? '1rem' : '0', backgroundColor: mobile.mobile == false  ? '#1c1917' : ''}}>
+      {user ? <span>Welcome, {user.name}</span> : ''}
+      {user ? '' : <HeaderButton><Link href='/register'>Sign Up</Link></HeaderButton>}
+      {user ? <HeaderButton onClick={() => {
+        logOut()
+      }}>Logout</HeaderButton> : <HeaderButton><Link href="/login">Login</Link></HeaderButton>}
+    </div>
+  )
+}
 
 const Header = () => {
   const [mobileActive, setMobileActive]= useState(false)
@@ -166,9 +190,31 @@ const Header = () => {
     '/characters/explorericonpng.png',
     '/characters/luckyiconpng.png',
   ]
+  const useWindowWide = (size) => {
+    const [width, setWidth] = useState(0)
+    
+    useEffect(() => {
+      function handleResize() {
+        setWidth(window.innerWidth)
+      }
+      
+      window.addEventListener("resize", handleResize)
+      
+      handleResize()
+      
+      return () => { 
+        window.removeEventListener("resize", handleResize)
+      }
+    }, [setWidth])
+    
+    return width > size
+  }
+
+  const mobile = useWindowWide(1024)
 
   useEffect(() => {
-    let imagesIndex = 0
+
+  let imagesIndex = 0
     setInterval(() => {
       imagesIndex++
       if(imagesIndex > (imagesLogo.length - 1) )  {
@@ -177,17 +223,19 @@ const Header = () => {
       setLogoImage(imagesIndex)
     }, 1500)
   }, [])
- 
+  
   return (
   <>
    <header>
     <DivHeader>
         <Logo url={imagesLogo[logoImage]} text='MetaBrotato'/>
         <DesktopMenu />
+        {mobile ? <HeaderInfo /> : ''}
         <MobileButton onClick={() => setMobileActive(!mobileActive)}/>
     </DivHeader>
+    {mobile ? '' : <HeaderInfo mobile={mobile}/>}
 
-    <Menu mobileActive={mobileActive}/>
+    <Menu mobileActive={mobileActive} />
    </header>
   </>
   )

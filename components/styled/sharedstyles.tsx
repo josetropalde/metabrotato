@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 const Main = styled.main`
   padding: 0 5%;
+  margin-top: 10rem;
   @media (min-width: 72rem) {
     padding: 0 20%;
   }
@@ -90,7 +91,7 @@ const StickyAdLeft = styled.div`
 display: none;
     @media (min-width: 75rem) {
       margin-top: .625rem;
-    top: 6.25rem;
+    top: 10rem;
     left: 1rem;
     position: fixed;
     overflow: hidden;
@@ -109,7 +110,7 @@ const StickyAdRight = styled.div`
 display: none;
     @media (min-width: 75rem) {
       margin-top: .625rem;
-    top: 6.25rem;
+    top: 10rem;
     right: 1rem;
     position: fixed;
     overflow: hidden;
@@ -162,8 +163,69 @@ const HoverInfo = styled.div`
   }
 `
 
+const AuthCard = styled.div`
+background-color: ${({theme}) => theme.colors[600]};
+width: 100%;
+max-width: 37.5rem;
+margin: 4rem auto;
+margin-bottom: 14rem;
+padding: 4rem 5%;
+display: block;
+box-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+`
+const AuthForm = styled.form`
+`
+const AuthTitle = styled.h1`
+  padding: 0 5%;
+  margin-top: 2rem;
+  font-size: 2rem;
+  text-align: center;
+  @media (min-width: 64rem) {
+    padding: 0;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+  }
+`
 
-export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds, StickyAdLeft, StickyAdRight, InArticleAds, HoverInfo }
+const AuthInput = styled.input`
+  display: block;
+  width: 95%;
+  padding: .75rem;
+  margin: 1rem auto;
+  border-radius: .5rem;
+  border: none;
+`
+const AuthButton = styled.button<{themeColor: string, fontColor: string}>`
+  display: block;
+  width: 95%;
+  margin: auto;
+  margin-top: 1.5rem;
+  background-color: ${({theme, themeColor}) => theme.colors[themeColor]};
+  color: ${({fontColor}) => fontColor};
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+`
+const AuthAnchor = styled.a<{themeColor: string, fontColor: string}>`
+  display: inline-block;
+  width: 45%;
+  margin: .5rem auto;
+  background-color: ${({theme, themeColor}) => theme.colors[themeColor]};
+  color: ${({fontColor}) => fontColor};
+  border: none;
+  padding: .5rem 1rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  font-size: .875rem;
+  @media (min-width: 64rem) {
+    font-size: 1rem;
+  }
+  `
+
+
+export {Main, Container, DivEarlyLate, DivBgImages, StyledCard, StatsImage, DivAds, StickyAdLeft, StickyAdRight, InArticleAds, HoverInfo, AuthCard, AuthForm, AuthInput, AuthButton, AuthAnchor, AuthTitle }
 
 
 

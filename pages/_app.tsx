@@ -5,6 +5,7 @@ import { useEffect } from 'react'
 import Script from 'next/script'
 import { useRouter } from 'next/router'
 import * as gtag from '../lib/gtag'
+import { AuthContextProvider } from '../context/AuthContext'
 
 const theme: DefaultTheme = {
   colors: {
@@ -36,6 +37,7 @@ export default function App({ Component, pageProps }: AppProps) {
   }, [router.events])
   return (
     <>       
+    <AuthContextProvider>
      <Script
         strategy="afterInteractive"
         src={`https://www.googletagmanager.com/gtag/js?id=${gtag.GA_TRACKING_ID}`}
@@ -55,9 +57,12 @@ export default function App({ Component, pageProps }: AppProps) {
         }}
       />
       <ThemeProvider theme={theme}>
-        <GlobalStyle />
-        <Component {...pageProps} />
+        
+          <GlobalStyle />
+          <Component {...pageProps} />
       </ThemeProvider>
+      </AuthContextProvider>
+
     </>
   )
 }

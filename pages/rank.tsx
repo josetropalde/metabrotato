@@ -4,7 +4,6 @@ import Cards from '../components/styled/cards'
 import Header from '../components/styled/header'
 import { Container, DivAds, InArticleAds, Main, StickyAdLeft, StickyAdRight } from '../components/styled/sharedstyles'
 import Title from '../components/styled/title'
-
 import { useQuerySubscription } from "react-datocms";
 import { request } from "../lib/datocms";
 import Footer from '../components/styled/footer'
@@ -14,7 +13,7 @@ import { Adsense } from '@ctrl/react-adsense'
 
 const PROJECTS_QUERY = `
 query MyQuery {
-  allCards(orderBy: tier_ASC, first: 100) {
+  allCards(first: 100, orderBy: vote_ASC) {
     tier
     id
     difficulty
@@ -91,9 +90,10 @@ const Patch = styled.h2`
   font-size: 1rem;
   font-weight: normal;
 `
-const Strategies = ({subscription}) => {
+const Rank = ({subscription}) => {
 
   const { data, error, status } = useQuerySubscription(subscription)
+
 
   let allItems = [ 
     {
@@ -4216,34 +4216,33 @@ const Strategies = ({subscription}) => {
       ]
     }
   ];
-
-
+ 
   return (  
   <>
     <Head>
-      <title>Brotato Meta Best Strategies - MetaBrotato</title>
+      <title>Rank of the Best Strategies - MetaBrotato</title>
       
-      <meta name="title" content="Brotato Meta Best Strategies - MetaBrotato"></meta>
+      <meta name="title" content="Rank of the Best Strategies - MetaBrotato"></meta>
       <meta
         name="description"
         content="Discover best Brotato Strategies, Guides and Builds to win more runs on Brotato with the best builds of the meta - MetaBrotato."
       />
 
       <meta property="og:type" content="website" />
-      <meta property="og:url" content="https://www.metabrotato.com/strategies" />
+      <meta property="og:url" content="https://www.metabrotato.com/rank" />
       <meta property="og:title" content="Brotato Meta Best Strategies - MetaBrotato" /> 
       <meta property="og:description" content="Discover best Brotato Strategies, Guides and Builds to win more runs on Brotato with the best builds of the meta" />
       <meta property="og:image" content="/strategies.png" />
 
       <meta property="twitter:card" content="summary_large_image" />
-      <meta property="twitter:url" content="https://www.metabrotato.com/strategies" />
+      <meta property="twitter:url" content="https://www.metabrotato.com/rank" />
       <meta property="twitter:title" content="Brotato Meta Best Strategies - MetaBrotato" />
       <meta property="twitter:description" content="Discover best Brotato Strategies, Guides and Builds to win more runs on Brotato with the best builds of the meta" />
       <meta property="twitter:image" content="/strategies.png"></meta>
     </Head>
 
     <Header />
-    <DivAds style={{marginTop: '8rem'}}>
+    <DivAds>
       <Adsense
         className='adsbygoogle'
         client="ca-pub-2203319803462882"
@@ -4275,35 +4274,36 @@ const Strategies = ({subscription}) => {
     </StickyAdRight>
 
     <Main>
-      <Title text="Best Strategys" />
+      <Title text="Ranks - Beta" />
       <Patch>Patch 0.6.1.6</Patch>
       <Container>
         {data.allCards.map((card, index) => {
           return (
             <>
             <Cards 
-            rank={false}
-            tier={card.tier} 
-            name={card.name} 
-            character={card.character} 
-            weapons={card.items}
-            isNew={card.isnew}
-            difficulty={card.difficulty}
-            
-            cardID={card.name}
+                rank={true}
+                tier={card.tier}
+                name={card.name}
+                character={card.character}
+                weapons={card.items}
+                isNew={card.isnew}
+                difficulty={card.difficulty}
 
-            allItems={allItems}
-            allWeapons={data.allWeapons}
-            allCharacters={data.allCharacters}
+                cardID={card.name}
 
-            itemsEarly={card.itemsearly}
-            weaponsEarly={card.weaponsearly}
-            statsEarly={card.statsearly}
+                allItems={allItems}
+                allWeapons={data.allWeapons}
+                allCharacters={data.allCharacters}
 
-            itemsLate={card.itemslate}
-            weaponsLate={card.weaponslate}
-            statsLate={card.statslate}
-            key={index}/>
+                itemsEarly={card.itemsearly}
+                weaponsEarly={card.weaponsearly}
+                statsEarly={card.statsearly}
+
+                itemsLate={card.itemslate}
+                weaponsLate={card.weaponslate}
+                statsLate={card.statslate}
+                key={index}            
+            />
 
             <InArticleAds style={{display: index % 4 == 1 ? 'block' : 'none'}}>
               <Adsense
@@ -4326,6 +4326,7 @@ const Strategies = ({subscription}) => {
             </>
           )
         })}
+        
       </Container>
     </Main>
 
@@ -4345,4 +4346,4 @@ const Strategies = ({subscription}) => {
   </>
   )
 }
-export default Strategies;
+export default Rank;

@@ -1,5 +1,8 @@
-import { useState } from 'react'
+import { collection, onSnapshot } from 'firebase/firestore';
+import { useEffect, useState } from 'react';
 import styled from 'styled-components'
+import { db } from '../../config/firebase';
+import { useAuth } from '../../context/AuthContext';
 
 
 const StyledTier =  styled.div<{tierColor?: string}>`
@@ -15,8 +18,57 @@ const StyledTier =  styled.div<{tierColor?: string}>`
 `
 
 
-const Tier = ({tier}) => {
+const Tier = ({tier, cardID}) => {
+
+  const [data, setData] = useState([]);
+  const colRef = collection(db, "votes");
+  const {user} = useAuth();
+
+  useEffect(() => {
+    const subscriber = onSnapshot(colRef, (snapshot) => {
+      let getData = [];
+      snapshot.forEach((doc) => {
+        getData.push({
+          ...doc.data()
+        });
+      });
+      setData(getData);
+    });
+
+    return () => subscriber();
+  }, []);
+  
+  let numberOfVotes;
+  let arrayOfCard = []
+  function getOccurrence(array, value) {
+    return array.filter((v) => (v === value)).length
+  } 
+ 
+
+  data.forEach((item, index) => {
+    if(item.card == cardID) {
+      arrayOfCard.push(item.card)
+      numberOfVotes = getOccurrence(arrayOfCard, cardID)
+    }
+  })
+
+
   let tierColor: string;
+  let rank: string;
+  
+  if(numberOfVotes > (numberOfVotes * 0.25)) {
+    rank = "A"
+  }
+  if(numberOfVotes > (numberOfVotes * 0.25)) {
+    rank = "B"
+  }
+  if(numberOfVotes > (numberOfVotes * 0.25)) {
+    rank = "C"
+  }
+  if(numberOfVotes > (numberOfVotes * 0.25)) {
+    rank = "D"
+  }
+  
   switch(tier) {
     case "A":
     tierColor = "#EF4444";

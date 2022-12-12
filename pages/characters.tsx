@@ -73,7 +73,7 @@ const Characters = ({subscription}) => {
 
     <Header />
 
-    <DivAds>
+    <DivAds style={{marginTop: '8rem'}}>
     <Adsense
       className='adsbygoogle'
       client="ca-pub-2203319803462882"
