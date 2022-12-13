@@ -13,7 +13,7 @@ import { Adsense } from '@ctrl/react-adsense'
 
 const PROJECTS_QUERY = `
 query MyQuery {
-  allCards(first: 100, orderBy: vote_ASC) {
+  allCards(first: 100, orderBy: name_ASC) {
     tier
     id
     difficulty
