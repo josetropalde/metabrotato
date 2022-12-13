@@ -132,14 +132,6 @@ const Characters = ({subscription}) => {
                 layout="in-article"
                 format="auto"
               />
-              <Adsense
-                className='adsbygoogle'
-                client="ca-pub-2203319803462882"
-                slot="6666420125"
-                style={{ display: 'block', textAlign: 'center', marginTop: 16}}
-                layout="in-article"
-                format="auto"
-              />
             </InArticleAds> 
             </>
           )
