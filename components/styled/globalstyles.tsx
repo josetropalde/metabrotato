@@ -16,7 +16,6 @@ const GlobalStyle = createGlobalStyle`
   body {
     color: ${({ theme }) => theme.colors[100]};
     background-color: ${({theme}) => theme.colors[700]};
-    padding: 0 !important;
   }
   a {
     color: inherit;
